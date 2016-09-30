@@ -14,7 +14,18 @@ $(document).ready(function() {
     $("#Left_Div").css("height",lenght);
 $(".alert").alert()
 });
+function Save()
+    {
+      alert("Đã đăng ký  thành công");
+      location = "GV_TrangThaiDeTai.html"
+    }
+    function TroLai()
+    {
+      
+      location = "GV_DangKyDeTai.html"
+    }
 </script>
+
 </head>
 
 <body>
@@ -351,14 +362,19 @@ $(".alert").alert()
 </tr><button type="add" class="btn btn-default">Thêm kinh phí</button>
 	</table>
   </div>
+   <div class="form-group">
+    <label for="exampleInputFile">File đính kèm</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">load các file báo cáo đính kém</p></br>
+    </div>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1">Tôi đồng ý đăng ký đề tài
 </label>
 </br>
 </form>
            </form>   
-  <button type="submit  " class="btn btn-default">Đăng Ký</button>
-	<button type="back" class="btn btn-default">Trở Lại</button>    
+  <button type="submit  " class="btn btn-default" onclick= "Save(); return false;">Đăng Ký</button>
+	<button type="back" class="btn btn-default" onclick= "TroLai(); return false;">Trở Lại</button>    
     </div>
     <div id="Footer_Div">
 	</div>

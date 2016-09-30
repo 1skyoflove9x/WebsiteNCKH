@@ -14,17 +14,18 @@ $(document).ready(function() {
     $("#Left_Div").css("height",lenght);
 $(".alert").alert()
 });
-function TroLai()
-		{
-			
-			location = "SV_DangKyDeTai.html"
-		}
 function Save()
-		{
-			alert("Đã đăng ký  thành công");
-			location = "SV_TrangThaiDeTai.html"
-		}
+    {
+      alert("Đã đăng ký  thành công");
+      location = "GV_TrangThaiDeTai.html"
+    }
+    function TroLai()
+    {
+      
+      location = "GV_DangKyDeTai.html"
+    }
 </script>
+
 </head>
 
 <body>
@@ -36,15 +37,15 @@ function Save()
 
     
     <div id="Left_Div">
- <div  class="menu" onclick="ThongBao()">Thông Báo</div>
-        <div  class="menu" onclick="ThongTinCaNhan()">Thông Tin Cá Nhân</div>
-        <div  class="menu" onclick="TrangThaiDeTai()">Trạng Thái Đề Tài</div>
-        <div  class="menu" onclick="DiemDanhGia()">Điểm Đánh Giá Nghiệm Thu</div>
-        <div  class="menu" onclick="DangKyDeTai()">Đăng Ký Đề Tài</div>   
-	<div  class="menu" onclick="XemMaSoDeTai()">Xem Mã Số Đề Tài</div>      
-	<div  class="menu" onclick="GiaHanDeTai()">Gia Hạn Đề Tài</div>   
-	<div  class="menu" onclick="HuyDeTai()">HuyDeTai</div>  
-	<div  class="menu" onclick="NopBaoCao()">Nộp Báo Cáo</div>  
+  <div  class="menu" onclick="TrangChuGV()">Trang Chủ</div>
+        <div  class="menu" onclick="ThongTinGV()">Thông Tin Cá Nhân</div>
+        <div  class="menu" onclick="XemDeTaiGV()">Xem Đề Tài</div>
+        <div  class="menu" onclick="DeTaiDuocPhanCongPheDuyetGV()">Đề Tài Được Phân Công Phê Duyệt</div>
+        <div  class="menu" onclick="DeTaiDuocPhanCongPhanBienGV()">Đề Tài Được Phân Công Phản Biện</div>
+        <div  class="menu" onclick="DeTaiDangHuongDanGV()">Đề Tài Đang Hướng Dẫn</div>
+        <div  class="menu" onclick="DuyetHuyDeTaiGV()">Duyệt Hủy Đề Tài</div>
+        <div  class="menu" onclick="DuyetDangKyDeTaiGV()">Duyệt Đăng Kí Đề Tài</div>
+        <div  class="menu" onclick="DeTaiCuaToiGV()">Đề Tài Của Tôi</div>
     </div>
     
     <div id="Center_Div"> 
@@ -54,17 +55,15 @@ function Save()
  <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
                
 <form class="form-inline" role="form">
-  <div class="form-group has-success has-feedback">
+  <div class="form-group">
     <label for="exampleInputEmail1">Tên Đề Tài</label>
     <textarea class="form-control" rows="3"placeholder="nhập tên đề tài"></textarea>
-	 <span class="glyphicon glyphicon-ok form-control-feedback"></span>
   </div></br>
 
-<div class="form-group has-error has-feedback">
+<div class="form-group >
     <label for="inputEmail3" class="col-sm-3 control-label">Họ Tên Chủ Nhiệm</label>
     <div class="col-sm-4">
       <input type="text" class="form-control" id="inputEmail3" placeholder="nhập tên chủ nhiệm">
-  	<span class="glyphicon glyphicon-remove form-control-feedback"></span>
     </div>
 <label for="inputEmail3" class="col-sm-2 control-label">Ngày Sinh</label>
     <div class="col-sm-3">
@@ -361,19 +360,11 @@ function Save()
 </tr><button type="add" class="btn btn-default">Thêm kinh phí</button>
 	</table>
   </div>
-   <div class="form-group">
-    <label for="exampleInputFile">File đính kèm</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">load các file báo cáo đính kém</p></br>
-    </div>
-<label class="checkbox-inline">
-  <input type="checkbox" id="inlineCheckbox1" value="option1">Tôi đồng ý đăng ký đề tài
-</label>
 </br>
 </form>
            </form>   
-  <button type="submit  " class="btn btn-default"onclick= "Save(); return false;">Đăng Ký</button>
-	<button type="back" class="btn btn-default"onclick= "TroLai(); return false;">Trở Lại</button>    
+  <button type="submit  " class="btn btn-default" onclick= "Save(); return false;">Nhập Ý Kiến</button>
+	<button type="back" class="btn btn-default" onclick= "TroLai(); return false;">Trở Lại</button>    
     </div>
     <div id="Footer_Div">
 	</div>

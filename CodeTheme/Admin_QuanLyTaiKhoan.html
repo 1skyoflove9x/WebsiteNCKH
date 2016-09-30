@@ -32,10 +32,11 @@ $(".alert").alert()
         <div  class="menu" onclick="ThongBaoAdmin()">Quản Lý Thông Báo</div> 
     </div>
     
+    
     <div id="Center_Div"> 
            <button style="margin:auto; float:right; margin-right:10px; margin-bottom:2px;; margin-top:5px;" id="dangxuat" title="Đăng Xuất" onclick="DangXuat()">Đăng Xuất</button>
            <h2 id="QuanLyTaiKhoan" style="clear:right; margin-left:20px;color:#009;">Quản Lý Tài Khoản </h2>
-
+ <button type="button" style="margin:auto; float:right; margin-right:40px; margin-bottom:2px;; margin-top:5px;" class="btn btn-primary">Tạo Tài Khoản</button>
  <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
           <div class="table-responsive">
             <table class="table table-striped">
@@ -45,7 +46,7 @@ $(".alert").alert()
                   <th>Tên Đăng Nhập</th>
                   <th>Mật Khẩu</th>
                   <th>Họ Tên User</th>
-                  <th>Email User</th>
+                  <th>Phân Quyền</th>
 	<th></th>
                 </tr>
               </thead>
@@ -55,7 +56,13 @@ $(".alert").alert()
                   <td>14110425</td>
                   <td>123456</td>
                   <td>Nguyễn Quốc Trường</td>
-                  <td>14110425@student.hcmute.edu.vn</td>
+                 <td>  <select class="form-control">
+  <option>Admin</option> 
+  <option>Nhân Viên Quản lý</option>
+  <option>Giảng Viên</option>
+  <option>Sinh Viên</option>
+</select>
+</td>
               <td> <button type="button" class="btn btn-primary">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
   </tr>
@@ -64,7 +71,13 @@ $(".alert").alert()
                   <td>14110426</td>
                   <td>123456</td>
                   <td>Phạm Công Hậu</td>
-                  <td>14110426@student.hcmute.edu.vn</td>
+                                   <td>  <select class="form-control">
+  <option>Admin</option> 
+  <option>Nhân Viên Quản lý</option>
+  <option>Giảng Viên</option>
+  <option>Sinh Viên</option>
+</select>
+</td>
                 <td> <button type="button" class="btn btn-primary">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
 </tr>
@@ -73,7 +86,13 @@ $(".alert").alert()
                   <td>14110427</td>
                   <td>123456</td>
                   <td>Lý Say Xình</td>
-                  <td>14110427@student.hcmute.edu.vn</td>
+                                  <td>  <select class="form-control">
+   <option>Giảng Viên</option>
+  <option>Admin</option> 
+  <option>Nhân Viên Quản lý</option>
+  <option>Sinh Viên</option>
+</select>
+</td>
                 <td> <button type="button" class="btn btn-primary">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
 </tr>
@@ -82,7 +101,13 @@ $(".alert").alert()
                   <td>14110427</td>
                   <td>123456</td>
                   <td>Trần Trọng Trí</td>
-                  <td>14110428@student.hcmute.edu.vn</td>
+                                  <td>  <select class="form-control">
+    <option>Nhân Viên Quản lý</option>
+  <option>Admin</option> 
+  <option>Giảng Viên</option>
+  <option>Sinh Viên</option>
+</select>
+</td>
                 <td> <button type="button" class="btn btn-primary">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
 </tr>
@@ -91,7 +116,13 @@ $(".alert").alert()
                   <td>14110426</td>
                   <td>123456</td>
                   <td>Lê bảo</td>
-                  <td>14110426@student.hcmute.edu.vn</td>
+                                <td>  <select class="form-control">
+    <option>Sinh Viên</option
+  <option>Admin</option> 
+  <option>Nhân Viên Quản lý</option>
+  <option>Giảng Viên</option>
+</select>
+</td>
                 <td> <button type="button" class="btn btn-primary">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
 </tr>
@@ -100,7 +131,13 @@ $(".alert").alert()
                   <td>14110426</td>
                   <td>123456</td>
                   <td>Lê Quốc Trung Trực</td>
-                  <td>14110426@student.hcmute.edu.vn</td>
+                                  <td>  <select class="form-control">
+  <option>Nhân Viên Quản lý</option>
+  <option>Admin</option> 
+  <option>Giảng Viên</option>
+  <option>Sinh Viên</option>
+</select>
+</td>
                <td> <button type="button" class="btn btn-primary">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
  </tr>
