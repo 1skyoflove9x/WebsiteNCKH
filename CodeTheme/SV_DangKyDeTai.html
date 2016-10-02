@@ -7,24 +7,51 @@
 <title>Quản lý khoa học</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 <script type="text/javascript" src="../Jquery/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
+
+
+<script src="../assets/dist/jquery.validate.js"></script> 
+<script src="../assets/dist/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="../assets/dist/localization/messages_vi.js"></script>
+<script src="../script.js"></script>
+<script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script> 
 <script>
-$(document).ready(function() {
-	var lenght = $("#Center_Div").css("height");
-    $("#Left_Div").css("height",lenght);
-$(".alert").alert()
-});
-function TroLai()
-		{
-			
-			location = "SV_DangKyDeTai.html"
-		}
+            addEventListener('load', prettyPrint, false);
+          $(document).ready(function(){
+        // Khai báo validate cho thẻ form
+        $('form').validate(
+        {
+            // Thiết lập validate cho sự kiện keyup
+            onKeyup: true, 
+ 
+            // Function sẽ gọi khi validate thành cong
+            eachValidField: function() {
+                // Validate thành công thì xóa class error và add class success
+                $(this).removeClass('error').addClass('success');
+            },
+ 
+            // Function sẽ gọi khi validate thất bại
+            eachInvalidField: function() {
+                // Validate thất bại thì xóa class success và add class error
+                $(this).removeClass('success').addClass('error');
+            }
+        });
+    });
+            function TroLai()
+    {
+      
+      location = "SV_DangKyDeTai.html"
+    }
 function Save()
-		{
-			alert("Đã đăng ký  thành công");
-			location = "SV_TrangThaiDeTai.html"
-		}
-</script>
+    {
+
+      alert("Đã đăng ký  thành công");
+      location = "SV_TrangThaiDeTai.html"
+    }
+                  </script>
+<style>
+            .success{color:blue;}
+            .error {color:red;}
+        </style>
 </head>
 
 <body>
@@ -35,7 +62,7 @@ function Save()
     </div>
 
     
-    <div id="Left_Div">
+    <div id="Left_Div" style="height:2450px;">
  <div  class="menu" onclick="ThongBao()">Thông Báo</div>
         <div  class="menu" onclick="ThongTinCaNhan()">Thông Tin Cá Nhân</div>
         <div  class="menu" onclick="TrangThaiDeTai()">Trạng Thái Đề Tài</div>
@@ -51,49 +78,51 @@ function Save()
            <button style="margin:auto; float:right; margin-right:10px; margin-bottom:2px;; margin-top:5px;" id="dangxuat" title="Đăng Xuất" onclick="DangXuat()">Đăng Xuất</button>
            <h2 id="ThongTinCaNhan" style="clear:right; margin-left:20px;color:#009;">Đăng Ký Đề Tài NCKH</h2>
 
- <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
+
+ 
+
                
-<form class="form-inline" role="form">
-  <div class="form-group has-success has-feedback">
-    <label for="exampleInputEmail1">Tên Đề Tài</label>
-    <textarea class="form-control" rows="3"placeholder="nhập tên đề tài"></textarea>
-	 <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+<form id="registration-form" class="form-horizontal">
+  <div class="form-control-group" style="margin-left:20px;">
+    <label class="control-label" for="name">Tên Đề Tài <span class="rq"> * </span></label>
+     <div class="controls">
+    <textarea type="text" class="form-control" rows="3" name="name" id="tendetai" minlength="20" placeholder="nhập tên đề tài"  required></textarea>
+    </div>
   </div></br>
 
-<div class="form-group has-error has-feedback">
-    <label for="inputEmail3" class="col-sm-3 control-label">Họ Tên Chủ Nhiệm</label>
+<div class="form-control-group">
+    <label class="col-sm-3 control-label" for="name">Họ Tên Chủ Nhiệm <span class="rq"> *</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputEmail3" placeholder="nhập tên chủ nhiệm">
-  	<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+     <input type="text"  class="form-control" name="name" id="name" placeholder="Nhập tên chủ nhiệm"  minlength="6">
+    </div>
+<label for="name" class="col-sm-2 control-label">Ngày Sinh</label>
+    <div class="col-sm-3">
+      <input type="date" class="form-control" name="ngaysinh" id="ngaysinh">
+    </div>
+</br></br></br>
+  </div>
+
+<div class="form-control-group">
+    <label class="col-sm-3 control-label" for="name">Đơn Vị</label>
+    <div class="col-sm-4">
+     <input type="text"  class="form-control" name="name" id="donvi" placeholder="Nhập tên đơn vị" minlength="6">
     </div>
 <label for="inputEmail3" class="col-sm-2 control-label">Ngày Sinh</label>
     <div class="col-sm-3">
       <input type="date" class="form-control" id="inputEmail3">
     </div>
-</br></br>
+</br></br></br>
   </div>
 
 <div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Đơn Vị</label>
+    <label class="col-sm-3 control-label" for="email">Email</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập khoa, ban, phòng công tác">
-    </div>
-<label for="inputEmail3" class="col-sm-2 control-label">Số Điện Thoại</label>
-    <div class="col-sm-3">
-      <input type="Number" class="form-control" id="inputEmail3"placeholder="Nhập số điện thoại">
-    </div>
-</br></br>
-  </div>
-
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
-    <div class="col-sm-4">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="nhập địa chỉ email">
+      <input type="email" class="form-control" name="email" id="email" placeholder="nhập địa chỉ email">
     </div>
 <label for="inputEmail3" class="col-sm-2 control-label">Giới tính</label>
     <div class="col-sm-3">
      <label class="checkbox-inline">
-  <input type="checkbox" id="inlineCheckbox1" value="option1"> Nam
+  <input type="checkbox" id="agree"  value="option1"> Nam
 </label>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox2" value="option2"> Nữ
@@ -104,19 +133,19 @@ function Save()
 <div class="form-group">
     <label for="inputEmail3" class="col-sm-3 control-label">Lớp</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputEmail3" placeholder="nhập lớp sinh viên theo học">
+      <input type="text" class="form-control" name="name" id="lop" placeholder="nhập lớp sinh viên theo học">
     </div>
 <label for="inputEmail3" class="col-sm-2 control-label">Niên Khóa</label>
     <div class="col-sm-3">
-      <input type="Number" class="form-control" id="inputEmail3"placeholder="Nhập niên khóa học của sinh viên">
+      <input type="Number" class="form-control" name="name" id="nienkhoa" placeholder="Nhập niên khóa học của sinh viên">
     </div>
 </br></br>
  </div>
 
 <div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Giáo Viên Hướng Dẫn</label>
+    <label for="inputEmail3" class="col-sm-3 control-label">Giáo Viên Hướng Dẫn <span class="rq"> *</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập tên GV + học hàm hoặc học vị">
+      <input type="text" class="form-control" name="name" id="giaovien" placeholder="Nhập tên GV + học hàm hoặc học vị" minlength="6">
     </div>
 </br></br>
   </div>
@@ -169,7 +198,7 @@ function Save()
 <div class="form-group">
     <label for="inputEmail3" class="col-sm-3 control-label">Cơ Quan Chủ Trì</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control" id="inputEmail3" placeholder="Nhâp tên đơn vị tổ chức NCKH">
+      <input type="text" class="form-control" name="name" id="coquan" placeholder="Nhâp tên đơn vị tổ chức NCKH">
     </div>
 </br></br>
   </div>
@@ -177,7 +206,7 @@ function Save()
 <div class="form-group">
     <label for="inputEmail3" class="col-sm-3 control-label">Tình Hình Trong Nước</label>
     <div class="col-sm-9">
-      <textarea class="form-control" rows="3"placeholder="Nhập các vấn đề liên quan đến đề tài có ở trong nước"></textarea> 
+      <textarea class="form-control" rows="3" name="name" id="tinhhinhtrongnuoc" placeholder="Nhập các vấn đề liên quan đến đề tài có ở trong nước"></textarea> 
     </div>
 </br></br></br></br>
   </div>
@@ -185,7 +214,7 @@ function Save()
 <div class="form-group">
     <label for="inputEmail3" class="col-sm-4 control-label">Tình Hình Ngoài Nước</label>
     <div class="col-sm-8">
-       <textarea class="form-control" rows="3"placeholder="Nhập các vấn đề liên quan đến đề tài có ở ngoài nước"></textarea> 
+       <textarea class="form-control" rows="3" name="name" id="tinhhinhngoainuoc" placeholder="Nhập các vấn đề liên quan đến đề tài có ở ngoài nước" minlength="20"></textarea> 
     </div>
 </br></br></br></br>
   </div>
@@ -193,7 +222,7 @@ function Save()
 <div class="form-group">
     <label for="inputEmail3" class="col-sm-4 control-label">Các Công Trình Liên Quan</label>
     <div class="col-sm-8">
-       <textarea class="form-control" rows="3"placeholder="Những sản phẩm đã có trên thị trường"></textarea> 
+       <textarea class="form-control" rows="3" name="name" id="caccongtrinh" placeholder="Những sản phẩm đã có trên thị trường"></textarea> 
     </div>
 </br></br></br></br>
   </div>
@@ -201,7 +230,7 @@ function Save()
 <div class="form-group">
     <label for="inputEmail3" class="col-sm-4 control-label">Tính Cấp Thiết</label>
     <div class="col-sm-8">
-       <textarea class="form-control" rows="3"placeholder="Nhập tính cấp thiết của ứng dụng"></textarea> 
+       <textarea class="form-control" rows="3" name="name" id="tinhcapthiet" placeholder="Nhập tính cấp thiết của ứng dụng"></textarea> 
     </div>
 </br></br></br></br>
   </div>
@@ -209,7 +238,7 @@ function Save()
 <div class="form-group">
     <label for="inputEmail3" class="col-sm-4 control-label">Mục Tiêu Đề Tài</label>
     <div class="col-sm-8">
-       <textarea class="form-control" rows="3"placeholder="Mục Tiêu Đề Tài"></textarea> 
+       <textarea class="form-control" name="name" id="muctieu" rows="3" placeholder="Mục Tiêu Đề Tài"></textarea> 
     </div>
 </br></br></br></br>
   </div>
@@ -217,12 +246,12 @@ function Save()
 <div class="form-group">
     <label for="inputEmail3" class="col-sm-4 control-label">Phương Pháp Nghiên Cứu</label>
     <div class="col-sm-8">
-       <textarea class="form-control" rows="3"placeholder="Nhập Phương Pháp Nghiên Cứu"></textarea> 
+       <textarea class="form-control" rows="3" name="name" id="phuongphap" placeholder="Nhập Phương Pháp Nghiên Cứu"></textarea> 
     </div>
 </br></br></br></br>
   </div>
 
-<div class="form-group">
+<div class="form-group"  style="margin-left:20px;margin-right:10px;">
     <label for="exampleInputEmail1">Nôi Dung Nghiên Cứu Và Tiến Độ Thực Hiện</label>
     <table class="table table-bordered">
  <tr><th>Stt</th><th>Nội dung công việc</th> <th>Sản phẩm phải đạt</th><th>Thơi Gian</th><th>Người Thực Hiện</th> </tr>
@@ -240,10 +269,10 @@ function Save()
 <th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập thời gian( số tháng)"></th>
 <th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập người thực hiện"></th>
 </tr> <button type="add" class="btn btn-default">Thêm Công Việc</button>
-	</table>
+  </table>
   </div>
 
-<div class="form-group">
+<div class="form-group" >
     <label for="inputEmail3" class="col-sm-2 control-label">Loại Sản Phẩm</label>
     <div class="col-sm-10">
      <label class="checkbox-inline">
@@ -314,7 +343,7 @@ function Save()
     </div>
   </div>
 </br>
-<div class="form-group">
+<div class="form-group" style="margin-left:20px;margin-right:10px;">
     <label for="exampleInputEmail1">Tên Sản Phẩm, Số Lượng Và Yêu Cầu Khoa Học Đối Với Sản Phẩm</label></br>
     <table class="table table-bordered">
  <tr><th>Stt</th><th>Tên sản phẩm</th> <th>Số lượng</th><th>Yêu cầu khoa học</th> </tr>
@@ -330,20 +359,20 @@ function Save()
 <th> <input type="number" class="form-control" id="inputEmail3"</th>
 <th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập yêu cầu khoa học"></th>
 </tr><button type="add" class="btn btn-default">Thêm sản phẩm</button>
-	</table>
+  </table>
   </div>
 
 <div class="form-group">
     <label for="inputEmail3" class="col-sm-4 control-label">Địa Chỉ ứng Dụng</label>
     <div class="col-sm-8">
-      <input type="text" class="form-control" id="inputEmail3" placeholder="nhập địa chỉ ứng dụng của sản phẩm">
+      <input type="text" class="form-control" name="address"  id="diachiungdung" placeholder="nhập địa chỉ ứng dụng của sản phẩm">
     </div>
 </div>
 </br></br>
-<div class="form-group">
+<div class="form-group" style="margin-left:20px;margin-right:10px;">
  <label for="inputEmail3" class="col-sm-4 control-label">Kinh Phí Dự Trù</label>
     <div class="col-sm-8">
-      <input type="number" class="form-control" id="inputEmail3">
+      <input type="number" class="form-control" name="name" id="dutrukinhphi">
     </div></br>
     <table class="table table-bordered">
  <tr><th>Stt</th><th>Công việc</th> <th>Thành tiền</th><th>Ghi chú</th> </tr>
@@ -359,16 +388,24 @@ function Save()
 <th> <input type="number" class="form-control" id="inputEmail3"</th>
 <th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập ghi chú "></th>
 </tr><button type="add" class="btn btn-default">Thêm kinh phí</button>
-	</table>
+  </table>
   </div>
+   <div class="form-group" style="margin-left:20px;">
+    <label for="exampleInputFile">File đính kèm</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">load các file báo cáo đính kém</p></br>
+    </div>
 <label class="checkbox-inline">
-  <input type="checkbox" id="inlineCheckbox1" value="option1">Tôi đồng ý đăng ký đề tài
+  <input type="checkbox" id="inlineCheckbox1" value="option1" style="margin-left:20px;">Tôi đồng ý đăng ký đề tài
 </label>
-</br>
-</form>
-           </form>   
-  <button type="submit  " class="btn btn-default"onclick= "Save(); return false;">Đăng Ký</button>
-	<button type="back" class="btn btn-default"onclick= "TroLai(); return false;">Trở Lại</button>    
+</br></br>
+
+  <div class="form-actions">
+            
+  <button type="submit" class="btn btn-default"onclick= "Save(); return true;">Đăng Ký</button>
+	<button type="reset" class="btn btn-default"onclick= "TroLai(); return false;">Trở Lại</button>   
+      </div>
+   </form>  
     </div>
     <div id="Footer_Div">
 	</div>
