@@ -5,23 +5,100 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Quản lý khoa học</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NCKH</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/bootstrap.css">
   <script src="../Jquery/jquery-1.11.3.min.js"></script>
   <script src="../docs/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
-<script>
-$(document).ready(function() {
-	var lenght = $("#Center_Div").css("height");
-    $("#Left_Div").css("height",lenght);
-$(".alert").alert()
-});
-$('.carousel').carousel()
- function ChiTiet()
-    {
-      
-      location = "GV_XemChiTiet.html"
-    }
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+			
+		$("#thongtincanhan").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "ThongTinCaNhanGV.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#xemdetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "XemDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#detaiduocphancongpheduyet").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DeTaiDuocPhanCongPheDuyet.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#detaiduocphancongphanbien").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DeTaiDuocPhanCongPhanBien.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#detaidanghuongdan").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DeTaiDangHuongDan.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#duyethuydetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DuyetHuyDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#duyetdangkydetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DuyetDangKyDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#detaicuatoi").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DeTaiCuaToi.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		
+	});
+	$('.carousel').carousel()
 </script>
 <style>
   .carousel-inner > .item > img,
@@ -33,9 +110,11 @@ $('.carousel').carousel()
 </head>
 
 <body>
-<div id="Main">
+	<div id="Main">
+
 	<div id="Top_Div">
-		<div class="container">
+
+<div class="container">
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -74,19 +153,21 @@ $('.carousel').carousel()
     </a>
   </div>
 </div>
-    </div>
+
+
+	</div>
 
     
     <div id="Left_Div">
     	 <div  class="menu" onclick="TrangChuGV()">Trang Chủ</div>
-        <div  class="menu" onclick="ThongTinGV()">Thông Tin Cá Nhân</div>
-        <div  class="menu" onclick="XemDeTaiGV()">Xem Đề Tài</div>
-        <div  class="menu" onclick="DeTaiDuocPhanCongPheDuyetGV()">Đề Tài Được Phân Công Phê Duyệt</div>
-        <div  class="menu" onclick="DeTaiDuocPhanCongPhanBienGV()">Đề Tài Được Phân Công Phản Biện</div>
-        <div  class="menu" onclick="DeTaiDangHuongDanGV()">Đề Tài Đang Hướng Dẫn</div>
-        <div  class="menu" onclick="DuyetHuyDeTaiGV()">Duyệt Hủy Đề Tài</div>
-        <div  class="menu" onclick="DuyetDangKyDeTaiGV()">Duyệt Đăng Kí Đề Tài</div>
-        <div  class="menu" onclick="DeTaiCuaToiGV()">Đề Tài Của Tôi</div>
+        <div  class="menu" id="thongtincanhan">Thông Tin Cá Nhân</div>
+        <div  class="menu" id="xemdetai">Xem Đề Tài</div>
+        <div  class="menu" id="detaiduocphancongpheduyet">Đề Tài Được Phân Công Phê Duyệt</div>
+        <div  class="menu" id="detaiduocphancongphanbien">Đề Tài Được Phân Công Phản Biện</div>
+        <div  class="menu" id="detaidanghuongdan">Đề Tài Đang Hướng Dẫn</div>
+        <div  class="menu" id="duyethuydetai">Duyệt Hủy Đề Tài</div>
+        <div  class="menu" id="duyetdangkydetai">Duyệt Đăng Ký Đề Tài</div>
+        <div  class="menu" id="detaicuatoi">Đề Tài Của Tôi</div>
     </div>
     
     <div id="Center_Div"> 

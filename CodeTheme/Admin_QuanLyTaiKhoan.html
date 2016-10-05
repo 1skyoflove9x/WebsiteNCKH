@@ -9,10 +9,10 @@
 <script type="text/javascript" src="../Jquery/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
 <script>
-$(document).ready(function() {
-	var lenght = $("#Center_Div").css("height");
-    $("#Left_Div").css("height",lenght);
-$(".alert").alert()
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
 });
 </script>
 </head>
@@ -63,7 +63,7 @@ $(".alert").alert()
   <option>Sinh Viên</option>
 </select>
 </td>
-              <td> <button type="button" class="btn btn-primary">Xóa</button></td>
+              <td> <button type="button"  id="xoa" class="btn btn-primary">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
   </tr>
                 <tr>
@@ -78,7 +78,7 @@ $(".alert").alert()
   <option>Sinh Viên</option>
 </select>
 </td>
-                <td> <button type="button" class="btn btn-primary">Xóa</button></td>
+                <td> <button type="button"  class="btn btn-primary">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
 </tr>
                 <tr>
@@ -117,7 +117,7 @@ $(".alert").alert()
                   <td>123456</td>
                   <td>Lê bảo</td>
                                 <td>  <select class="form-control">
-    <option>Sinh Viên</option
+    <option>Sinh Viên</option>
   <option>Admin</option> 
   <option>Nhân Viên Quản lý</option>
   <option>Giảng Viên</option>

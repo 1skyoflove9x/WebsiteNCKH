@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Quản lý khoa học</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="../Jquery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
+<script type="text/javascript">
+function loadXmlDoc()
+{
+    return $.ajax({
+        type: "GET",
+        url: "books.xml",
+        dataType: "xml",
+        async:false
+    }).responseXML;
+}
+ 
+$(function()
+{
+    var xmlDoc=loadXmlDoc();
+    var select=$("#tendetaiSelect");
+    $(xmlDoc).find("book").each(function()
+    {
+        var title=$(this).find("tendetai").text();
+        var id=$(this).attr("id");
+        select.append("<option value='"+id+"'>"+title+"</option>");
+    });
+ 
+    var ul=$("#infoList");
+    select.change(function()
+    {
+        ul.html("");
+        var book=$("book[id='"+this.value+"']",xmlDoc);
+        ul.append("<td>"+book.attr("id")+"</td>");
+        book.children().each(function()
+        {
+            var li="<td>"+$(this).text()+"</td>";
+            ul.append(li);
+        });
+    });
+    
+    var select=$("#giaovienhdSelect");
+    $(xmlDoc).find("book").each(function()
+    {
+        var title=$(this).find("gvhd").text();
+        var id=$(this).attr("id");
+        select.append("<option value='"+id+"'>"+title+"</option>");
+    });
+    var ul=$("#infoList");
+    select.change(function()
+    {
+        ul.html("");
+        var book=$("book[id='"+this.value+"']",xmlDoc);
+        ul.append("<td>"+book.attr("id")+"</td>");
+        book.children().each(function()
+        {
+            var li="<td>"+$(this).text()+"</td>";
+            ul.append(li);
+        });
+    });
+
+var select=$("#madetaiSelect");
+$(xmlDoc).find("book").each(function()
+{
+    var title=$(this).find("book").text();
+    var id=$(this).attr("id");
+    select.append("<option value='"+id+"'>"+id+"</option>");
+});
+var ul=$("#infoList");
+select.change(function()
+{
+    ul.html("");
+    var book=$("book[id='"+this.value+"']",xmlDoc);
+    ul.append("<td>"+book.attr("id")+"</td>");
+    book.children().each(function()
+    {
+        var li="<td>"+$(this).text()+"</td>";
+        ul.append(li);
+    });
+});
+
+var select=$("#keyword");
+$(xmlDoc).find("book").each(function()
+{
+    var title=$(this).find("book").text();
+    var id=$(this).attr("id");
+    select.append("<option value='"+id+"'>"+id+"</option>");
+});
+var ul=$("#infoList");
+select.change(function()
+{
+    ul.html("");
+    var book=$("book[id='"+this.value+"']",xmlDoc);
+    ul.append("<td>"+book.attr("id")+"</td>");
+    book.children().each(function()
+    {
+        var li="<td>"+$(this).text()+"</td>";
+        ul.append(li);
+    });
+});
+
+});
+</script>
+</head>
+
+<body>
+
+    
+    <div id="Center_Div"> 
+           <button style="margin:auto; float:right;  margin-right:10px; margin-bottom:2px;; margin-top:5px;" id="dangxuat" title="Đăng Xuất" onclick="DangXuat()">Đăng Xuất</button>
+           <h2 id="QuanLyTaiKhoan" style="clear:right; margin-left:20px;color:#009;">Tìm kiếm  đề tài</h2>
+ <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
+ </br>
+ <strong style="margin-left:10px;color: red ">Tên Đề Tài:  </strong>
+    <select id="tendetaiSelect" style="width:200px"></select>
+     <strong style="margin-left:10px;color: red ">GV hưỡng dẫn:  </strong>
+    <select id="giaovienhdSelect" style="width:200px"></select>
+    
+     </br></br>
+ <div class="form-group">
+ <strong style="color: red "  class="col-sm-2">Mã đề tài:  </strong>
+    <div class="col-sm-4">
+      <select id="madetaiSelect" style="width:200px"></select>
+    </div>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="name" id="keyword" placeholder="Nhập từ cần kiếm..">
+    </div>
+     <div class="col-sm-2">
+      <button type="submit" class="btn btn-primary" >tìm</button>
+    </div>
+</br></br>
+  </div>
+    </br>
+
+ <form style=" border: groove;width:700px; height:700px;margin-left:15px; margin-right:15px;">	
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Mã Đề Tài</th>
+                  <th>Tên Đề Tài</th>
+                  <th>Họ Tên Chủ Nhiệm</th>
+                  <th>GV Hướng Dẫn</th>
+	<th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="infoList">
+                </tr>
+              </tbody>
+            </table>
+               
+          </div>
+          </form>
+</form> 
+    </div>
+</div>
+</body>
+</html>

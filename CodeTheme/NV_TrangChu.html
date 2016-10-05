@@ -4,18 +4,153 @@
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quản lý khoa học</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NCKH</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/bootstrap.css">
   <script src="../Jquery/jquery-1.11.3.min.js"></script>
   <script src="../docs/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
-<script>
-$(document).ready(function() {
-  var lenght = $("#Center_Div").css("height");
-    $("#Left_Div").css("height",lenght);
-$(".alert").alert()
-});
-$('.carousel').carousel()
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+			
+		$("#thongtincanhan").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "ThongTinCaNhanGV.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#xemdetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "XemDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#detaiduocphancongpheduyet").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DeTaiDuocPhanCongPheDuyet.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#detaiduocphancongphanbien").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DeTaiDuocPhanCongPhanBien.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#detaidanghuongdan").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DeTaiDangHuongDan.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#duyethuydetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DuyetHuyDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#duyetdangkydetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DuyetDangKyDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#detaicuatoi").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DeTaiCuaToi.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#capmadetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "CapMaDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#timkiem").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "TimKiem.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#thaydoitrangthaidetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "ThayDoiTrangThaiDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#postthongbao").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "PostThongBao.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#phanconghoidongnghiemthu").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "PhanCongHoidongNghiemThu.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#phanconghoidongphanbien").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "PhanCongHoidongPhanBien.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+	});
+	$('.carousel').carousel()
 </script>
 <style>
   .carousel-inner > .item > img,
@@ -27,9 +162,11 @@ $('.carousel').carousel()
 </head>
 
 <body>
-<div id="Main">
-  <div id="Top_Div">
-    <div class="container">
+	<div id="Main">
+
+	<div id="Top_Div">
+
+<div class="container">
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -68,25 +205,27 @@ $('.carousel').carousel()
     </a>
   </div>
 </div>
-    </div>
+
+
+	</div>
 
     
     <div id="Left_Div">
     	  <div  class="menu" onclick="TrangChuNV()">Trang Chủ</div>
-        <div  class="menu" onclick="ThongTinNV()">Thông Tin Cá Nhân</div>
-        <div  class="menu" onclick="XemDeTaiNV()">Xem Đề Tài</div>
-        <div  class="menu" onclick="DeTaiDuocPhanCongPheDuyetNV()">Đề Tài Được Phân Công Phê Duyệt</div>
-        <div  class="menu" onclick="DeTaiDuocPhanCongPhanBienNV()">Đề Tài Được Phân Công Phản Biện</div>
-        <div  class="menu" onclick="DeTaiDangHuongDanNV()">Đề Tài Đang Hướng Dẫn</div>
-        <div  class="menu" onclick="DuyetHuyDeTaiNV()">Duyệt Hủy Đề Tài</div>
-        <div  class="menu" onclick="DuyetDangKyDeTaiNV()">Duyệt Đăng Kí Đề Tài</div>
- <div  class="menu" onclick="CapMaDeTaiNV()">Cấp Mã Đề Tài</div>
- <div  class="menu" onclick="PostThongBaoNV()">Post Thông Báo</div>
-<div  class="menu" onclick="TimKiemNV()">Tìm Kiếm</div>
- <div  class="menu" onclick="ThayDoiTrangThaiNV()">Thay Đổi Trạng Thái Đề Tài</div>
-  <div  class="menu" onclick="PhanCongHoiDongNV()">Phân Công Hội Đồng Nghiệm Thu</div>
-  <div  class="menu" onclick="PhanCongPhanBienNV()">Phân Công Hội Đồng Phản Biện</div>
-        <div  class="menu" onclick="DeTaiCuaToiNV()">Đề Tài Của Tôi</div>
+        <div  class="menu" id="thongtincanhan"">Thông Tin Cá Nhân</div>
+        <div  class="menu" id="xemdetai">Xem Đề Tài</div>
+        <div  class="menu" id="detaiduocphancongpheduyet">Đề Tài Được Phân Công Phê Duyệt</div>
+        <div  class="menu" id="detaiduocphancongphanbien">Đề Tài Được Phân Công Phản Biện</div>
+        <div  class="menu" id="detaidanghuongdan">Đề Tài Đang Hướng Dẫn</div>
+        <div  class="menu" id="duyethuydetai">Duyệt Hủy Đề Tài</div>
+        <div  class="menu" id="duyetdangkydetai">Duyệt Đăng Kí Đề Tài</div>
+ <div  class="menu" id="capmadetai">Cấp Mã Đề Tài</div>
+ <div  class="menu" id="postthongbao">Post Thông Báo</div>
+<div  class="menu" id="timkiem">Tìm Kiếm</div>
+ <div  class="menu" id="thaydoitrangthaidetai">Thay Đổi Trạng Thái Đề Tài</div>
+  <div  class="menu" id="phanconghoidongnghiemthu">Phân Công Hội Đồng Nghiệm Thu</div>
+  <div  class="menu" id="phanconghoidongphanbien">Phân Công Hội Đồng Phản Biện</div>
+        <div  class="menu" id="detaicuatoi">Đề Tài Của Tôi</div>
     </div>
     
     <div id="Center_Div"> 

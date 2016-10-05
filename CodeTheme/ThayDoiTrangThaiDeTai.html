@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Quản lý khoa học</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="../Jquery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
+<script>
+$(document).ready(function() {
+	var lenght = $("#Center_Div").css("height");
+    $("#Left_Div").css("height",lenght);
+$(".alert").alert()
+});
+</script>
+</head>
+
+<body>
+
+    <div id="Center_Div"> 
+           <button style="margin:auto; float:right; margin-right:10px; margin-bottom:2px;; margin-top:5px;" id="dangxuat" title="Đăng Xuất" onclick="DangXuat()">Đăng Xuất</button>
+           <h2 id="QuanLyTaiKhoan" style="clear:right; margin-left:20px;color:#009;">Thay Đổi Trạng Thái Cho Đề Tài </h2>
+
+ <form style=" border: groove;width:700px;height:700px; margin-left:15px; margin-right:15px;">	
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Stt</th>
+                  <th>Mã Đề Tài</th>
+                  <th>Tên Đề Tài</th>
+	<th>Trạng Thái</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>CNT1010</td>
+                  <td>Ứng Dụng GPS và Sim 900A</td>
+<td>  <select class="form-control">
+  <option>Đang chờ phê duyệt</option> 
+  <option>Đã phê duyệt</option>
+  <option>Đang chờ hủy</option>
+  <option>Đã hủy</option>
+  <option>Đang chờ gia hạn</option>
+ <option>Đã gia hạn</option>
+ <option>Đang  chờ nghiệm thu</option>
+<option>Đang  nghiệm thu</option>
+</select>
+</td>
+                </tr>
+                <tr>
+                 <td>2</td>
+                  <td>CTT1001</td>
+                  <td>Ứng dụng nước sạch nông thôn</td>
+             <td>  <select class="form-control">
+  <option>Đang chờ phê duyệt</option>
+  <option>Đã phê duyệt</option>
+  <option>Đang chờ hủy</option>
+  <option>Đã hủy</option>
+  <option>Đang chờ gia hạn</option>
+ <option>Đã gia hạn</option>
+ <option>Đang  chờ nghiệm thu</option>
+<option>Đang  nghiệm thu</option>
+</select>
+</td>
+                </tr>
+                <tr>
+                     <td>3</td>
+                  <td>CK1002</td>
+                  <td>Thùng rác thông minh</td>
+              <td>  <select class="form-control">
+  <option>Đang chờ phê duyệt</option>
+  <option>Đã phê duyệt</option>
+  <option>Đang chờ hủy</option>
+  <option>Đã hủy</option>
+  <option>Đang chờ gia hạn</option>
+ <option>Đã gia hạn</option>
+ <option>Đang  chờ nghiệm thu</option>
+<option>Đang  nghiệm thu</option>
+</select>
+</td>
+                </tr>
+<tr>
+                 <td>4</td>
+                  <td>NN1003</td>
+                  <td>Nghiên cứu về tạo lúa mới</td>
+                 <td>  <select class="form-control">
+  <option>Đang chờ phê duyệt</option>
+  <option>Đã phê duyệt</option>
+  <option>Đang chờ hủy</option>
+  <option>Đã hủy</option>
+  <option>Đang chờ gia hạn</option>
+ <option>Đã gia hạn</option>
+ <option>Đang  chờ nghiệm thu</option>
+<option>Đang  nghiệm thu</option>
+</select>
+</td>
+                </tr>
+<tr>
+                 <td>5</td>
+                  <td>CKDT1021</td>
+                  <td>Phát Triển Robot</td>
+                  <td>  <select class="form-control">
+  <option>Đang chờ phê duyệt</option>
+  <option>Đã phê duyệt</option>
+  <option>Đang chờ hủy</option>
+  <option>Đã hủy</option>
+  <option>Đang chờ gia hạn</option>
+ <option>Đã gia hạn</option>
+ <option>Đang  chờ nghiệm thu</option>
+<option>Đang  nghiệm thu</option>
+</select>
+</td>
+                </tr>
+<tr>
+                 <td>6</td>
+                  <td>CNT1032</td>
+                  <td>Công Nghệ Nano</td>
+               <td>  <select class="form-control">
+  <option>Đang chờ phê duyệt</option>
+  <option>Đã phê duyệt</option>
+  <option>Đang chờ hủy</option>
+  <option>Đã hủy</option>
+  <option>Đang chờ gia hạn</option>
+ <option>Đã gia hạn</option>
+ <option>Đang  chờ nghiệm thu</option>
+<option>Đang  nghiệm thu</option>
+</select>
+</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+</form>
+           </form>   
+    </div>
+
+</div>
+
+</body>
+</html>

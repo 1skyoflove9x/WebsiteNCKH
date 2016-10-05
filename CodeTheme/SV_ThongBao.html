@@ -2,18 +2,111 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Quản lý NCKH</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NCKH</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/bootstrap.css">
   <script src="../Jquery/jquery-1.11.3.min.js"></script>
   <script src="../docs/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
-<script>
-$(document).ready(function() {
-	var lenght = $("#Center_Div").css("height");
-    $("#Left_Div").css("height",lenght);
-});
-$('.carousel').carousel()
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+			var url,data;
+			
+			url = "Thongbao.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+		$("#thongtincanhan").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "ThongTinCaNhanSV.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#trangthaidetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "TrangThaiDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#diemdanhgia").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DiemDanhGia.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#dangkydetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DangKyDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#xemmadetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "XemMaDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#giahandetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "GiaHanDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#huydetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "HuyDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#nopbaocao").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "NopBaoCao.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#thongbao").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "ThongBao.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+	});
+	$('.carousel').carousel()
 </script>
 <style>
   .carousel-inner > .item > img,
@@ -25,8 +118,7 @@ $('.carousel').carousel()
 </head>
 
 <body>
-
-<div id="Main">
+	<div id="Main">
 
 	<div id="Top_Div">
 
@@ -73,21 +165,20 @@ $('.carousel').carousel()
 
 	</div>
 
-
     
     <div id="Left_Div">
-    	<div  class="menu" onclick="ThongBao()">Thông Báo</div>
-        <div  class="menu" onclick="ThongTinCaNhan()">Thông Tin Cá Nhân</div>
-        <div  class="menu" onclick="TrangThaiDeTai()">Trạng Thái Đề Tài</div>
-        <div  class="menu" onclick="DiemDanhGia()">Điểm Đánh Giá Nghiệm Thu</div>
-        <div  class="menu" onclick="DangKyDeTai()">Đăng Ký Đề Tài</div>   
-	<div  class="menu" onclick="XemMaSoDeTai()">Xem Mã Số Đề Tài</div>      
-	<div  class="menu" onclick="GiaHanDeTai()">Gia Hạn Đề Tài</div>   
-	<div  class="menu" onclick="HuyDeTai()">HuyDeTai</div>  
-	<div  class="menu" onclick="NopBaoCao()">Nộp Báo Cáo</div>  
+    	<div  class="menu" id="thongbao">Thông Báo</div>
+        <div  class="menu" id="thongtincanhan">Thông Tin Cá Nhân</div>
+        <div  class="menu" id="trangthaidetai">Trạng Thái Đề Tài</div>
+        <div  class="menu" id="diemdanhgia">Điểm Đánh Giá Nghiệm Thu</div>
+        <div  class="menu" id="dangkydetai">Đăng Ký Đề Tài</div>   
+	<div  class="menu" id="xemmadetai">Xem Mã Số Đề Tài</div>      
+	<div  class="menu" id="giahandetai">Gia Hạn Đề Tài</div>   
+	<div  class="menu" id="huydetai">HuyDeTai</div>  
+	<div  class="menu" id="nopbaocao">Nộp Báo Cáo</div>  
     </div>
     
-    <div id="Center_Div"> 
+    <div id="Center_Div" class="Center_Div"> 
            <button style="margin:auto; float:right; margin-right:10px; margin-bottom:2px;; margin-top:5px;" id="dangxuat" title="Đăng Xuất" onclick="DangXuat()">Đăng Xuất</button>
            <h2 id="tintuc" style="clear:right; margin-left:20px;color:#009;">Thông Báo</h2>
 
@@ -149,10 +240,12 @@ $('.carousel').carousel()
 
     <br/>
     </div>
+   
+
+
     <div id="Footer_Div">
 	</div>
-   
-</div>
-
+    
 </body>
+
 </html>
