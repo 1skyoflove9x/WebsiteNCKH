@@ -95,6 +95,16 @@
 			$("#Center_Div").load(url);
 			
         });
+
+		$("#xemdanhgia").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "XemDanhGia.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
 		$("#tb1").click(function(e) {
 			//=======.load(url)================
 			var url,data;
@@ -173,12 +183,14 @@
     	 <div  class="menu" onclick="TrangChuGV()">Trang Chủ</div>
         <div  class="menu" id="thongtincanhan">Thông Tin Cá Nhân</div>
         <div  class="menu" id="xemdetai">Xem Đề Tài</div>
+         <div  class="menu" id="xemdanhgia">Xem Đánh Giá Đề Tài</div>
         <div  class="menu" id="detaiduocphancongpheduyet">Đề Tài Được Phân Công Phê Duyệt</div>
         <div  class="menu" id="detaiduocphancongphanbien">Đề Tài Được Phân Công Phản Biện</div>
         <div  class="menu" id="detaidanghuongdan">Đề Tài Đang Hướng Dẫn</div>
         <div  class="menu" id="duyethuydetai">Duyệt Hủy Đề Tài</div>
         <div  class="menu" id="duyetdangkydetai">Duyệt Đăng Ký Đề Tài</div>
         <div  class="menu" id="detaicuatoi">Đề Tài Của Tôi</div>
+      
     </div>
     
     <div id="Center_Div"> 

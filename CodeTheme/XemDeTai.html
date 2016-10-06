@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
 <script>
 $(document).ready(function(){  
-    $('#data-table').DataTable({  
+    $('#loaddata').DataTable({  
          "ajax"     :     "dsdetai.json",  
          "columns"     :     [  
               {     "data"     :     "stt"     },  
@@ -22,7 +22,8 @@ $(document).ready(function(){
               {     "data"     :     "tenchunhiem"},
               {     "data"     :     "gvhd"}  
          ]  
-    });  
+    }); 
+
 });  
 </script>
 </head>
@@ -37,7 +38,7 @@ $(document).ready(function(){
  <form style=" border: groove;width:700px; height:700px;margin-left:15px; margin-right:15px;">	
             <br /><br />  
            <div class="container" style=" width:700px; height:700px;margin-left:5px; margin-right:50px;margin-bottom:35px;">  
-                <table id="data-table" class="table table-bordered">  
+                <table id="loaddata" class="table table-bordered">  
                      <thead>  
                           <tr>  
                                 <th width="2%">STT</th>  
