@@ -9,11 +9,18 @@
 <script type="text/javascript" src="../Jquery/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
 <script>
-$(document).ready(function() {
-	var lenght = $("#Center_Div").css("height");
-    $("#Left_Div").css("height",lenght);
-$(".alert").alert()
-});
+$(document).ready(function(){
+	$("#tb1").click(function(e) {
+		//=======.load(url)================
+		var url,data;
+		
+		url = "https://docs.google.com/document/d/15-zwTehY0-D3mKTVEkqpwWRb25kWzZ0b-5M1UkMfW7k/pub?embedded=true";
+		//url = "files/file-001.php";
+		$("#Center_Div").load(url);
+		
+	});
+	});
+	$('.carousel').carousel()
 function ChiTiet()
     {
       
@@ -48,7 +55,7 @@ function ChiTiet()
                   <td>Ứng dụng nước sạch nông thôn</td>
                   <td>Phạm công Hậu</td>
                   <td>3/10/2016</td>
-	<td> <button type="button" class="btn btn-primary"  onclick= "ChiTiet(); return false;">Xem Chi Tiết</button></td>
+	<td><div id="tb1"><a href = "#">Xem chi tiết</a></div></td>
                 </tr>
                 <tr>
                  <td>2</td>
@@ -56,7 +63,7 @@ function ChiTiet()
                   <td>Khả năng truy vấn của phần mềm </td>
                   <td>Dương Quá</td>
                   <td>16/10/2016</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
+<td><div id="tb1"><a href = "#">Xem chi tiết</a></div></td>
                 </tr>
               </tbody>
             </table>

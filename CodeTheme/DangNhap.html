@@ -17,12 +17,22 @@
             .error {color:red;}
         </style>
 <script>
-$(document).ready(function() {
-	var lenght = $("#Center_Div").css("height");
-   
-	
-	// var i=$('input:radio[name=quyen]:checked').val();
-});
+$(document).ready(function(){  
+    $('#show_password').on('click', function(){  
+         var passwordField = $('#password');  
+         var passwordFieldType = passwordField.attr('type');  
+         if(passwordFieldType == 'password')  
+         {  
+              passwordField.attr('type', 'text');  
+              $(this).text('Ẩn');  
+         }  
+         else  
+         {  
+              passwordField.attr('type', 'password');  
+              $(this).text('Hiện');  
+         }  
+    });  
+});  
 
 function DangNhap1()
 {
@@ -96,10 +106,11 @@ function DangNhap1()
   				<h style="font-weight:bold; color:#00C; margin-top:10px; margin-bottom: 0px; margin-left:10px;">Tài khoản:</h>  
                 <input class="input" type="text" name="name" id="user" placeholder="Nhập username" /> <br /></br>
   				<h style="font-weight:bold; color:#00C; margin-top:10px; margin-bottom: 0px; margin-left:10px;">Mật khẩu:</h> 	   
-                <input class="input" type="password" name="name" id="pass"  placeholder="Nhập password" /> <br />
+                <input class="input" type="password" name="name" id="password"  placeholder="Nhập password" />
+                 <button type="button" id="show_password" name="show_password" class="btn btn-default">hiện</button>  </br>
   				</form>
 			</form>
-             <button style=" margin-top:10px; margin-left:350px; color:#00C; font-weight:600;"  onclick="DangNhap1()">Đăng nhập</button> 
+             <button style=" margin-top:10px; margin-left:300px; color:#00C; font-weight:600;"  onclick="DangNhap1()">Đăng nhập</button> 
              </div>
     </div>
     </div>

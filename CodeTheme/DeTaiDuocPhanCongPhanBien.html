@@ -6,18 +6,34 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Quản lý khoa học</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-<script type="text/javascript" src="../Jquery/jquery-1.11.3.min.js"></script>
+  <script src="../Jquery/jquery-1.11.3.min.js"></script>
+  <script src="../docs/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/dist/jquery.validate.js"></script> 
+<script src="../assets/dist/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="../assets/dist/localization/messages_vi.js"></script>
+<script src="../script.js"></script>
 <script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
 <script>
-$(document).ready(function() {
-	var lenght = $("#Center_Div").css("height");
-    $("#Left_Div").css("height",lenght);
-$(".alert").alert()
-});
+$(document).ready(function(){
+	$("#tb1").click(function(e) {
+		//=======.load(url)================
+		var url,data;
+		
+		url = "https://docs.google.com/document/d/15-zwTehY0-D3mKTVEkqpwWRb25kWzZ0b-5M1UkMfW7k/pub?embedded=true";
+		//url = "files/file-001.php";
+		$("#Center_Div").load(url);
+		
+	});
+	});
+	$('.carousel').carousel()
 </script>
+<style>
+            .success{color:blue;}
+            .error {color:red;}
+        </style>
 </head>
 
-<body>
+<body>		
     <div id="Center_Div"> 
            <button style="margin:auto; float:right; margin-right:10px; margin-bottom:2px;; margin-top:5px;" id="dangxuat" title="Đăng Xuất" onclick="DangXuat()">Đăng Xuất</button>
            <h2 id="QuanLyTaiKhoan" style="clear:right; margin-left:20px;color:#009;">Đề Tài Được Phân Công Phản Biện </h2>
@@ -40,22 +56,24 @@ $(".alert").alert()
                 <tr>
                   <td>1</td>
                   <td>CK1002</td>
-                  <td>Thùng rác thông minh</td>
+                  <td>Ứng dụng sim 900A</td>
                   <td>Lý Say Xình</td>
                   <td>20/10/2016</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
+		<td><div id="tb1"><a href = "#">Xem chi tiết</a></div></td>
                 </tr>
+                
                 <tr>
                  <td>2</td>
                   <td>CNT1009</td>
                   <td>Giải Thuật Bài Toán Mới </td>
                   <td>Trịnh Sảng</td>
                   <td>11/10/2016</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
+	<td><div id="tb1"><a href = "#">Xem chi tiết</a></div></td>
                 </tr>
               </tbody>
             </table>
           </div>
+          
 </br></br></br>
 <h><strong>Lịch phân công</strong></h>
 <div class="table-responsive">
@@ -90,9 +108,41 @@ $(".alert").alert()
               </tbody>
             </table>
           </div>
+          
 </form>
+        <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Gửi Đánh Giá</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+
+<div id="Center_Div"> 
+           <h2 id="ThongTinCaNhan" style="clear:right; margin-left:20px;color:#009;">Gửi ý kiến đánh giá </h2>
+
+<form id="registration-form" class="form-horizontal">
+    <textarea class="form-control" rows="5" name="name" id="ykien" placeholder="nhập ý kiến đánh giá"  minlength="9"></textarea>
+  </br>
+  <h><strong>Đánh giá về đề tài:</strong></h>
+  </br>
+   <select class="form-control">
+  <option>Ứng dụng sim 900A</option> 
+  <option>Giải thuật bài toán</option>
+</select>
            </form>   
+           
+<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Trở Về</button>
+        <button type="submit" class="btn btn-primary"  name="submit" id="submit" >Gửi</button>
+      </div>
     </div>
+  </div>
+  </div>
+  </div>  
+    </div>
+      </div> 
+           </form> 
+   
 
 </div>
 
