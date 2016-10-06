@@ -9,10 +9,33 @@
   <script src="../docs/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
 <script>
-$(document).ready(function() {
-	var lenght = $("#Center_Div").css("height");
-    $("#Left_Div").css("height",lenght);
+$(document).ready(function(){
+
+ var url,data;
+$("#tb1").click(function(e) {
+	//=======.load(url)================
+	var url,data;
+	
+	url = "https://docs.google.com/document/d/1n-fIkgIOj5rDOyNpMSXukG-ctDBBrXS7EgAxns69B14/pub?embedded=true";
+	//url = "files/file-001.php";
+	$("#Center_Div").load(url);
+	
 });
+$("#tb2").click(function(e) {
+	//=======.load(url)================
+	var url,data;
+	
+	url = "https://docs.google.com/document/d/1vsQ4dDQmYugAS__lkApEHB7tLfI75jGpkhOxCewGTzM/pub?embedded=true";
+	//url = "files/file-001.php";
+	$("#Center_Div").load(url);
+	
+});
+$(document).on('click', '.btn_remove', function(){  
+    var button_id = $(this).attr("id");   
+    $('#row'+button_id+'').remove();  
+}); 
+});
+
 $('.carousel').carousel()
 </script>
 <style>
@@ -26,7 +49,7 @@ $('.carousel').carousel()
 
 <body>
 
-    <div id="Center_Div"> 
+    <div id="Center_Div" class="Center_Div"> 
            <button style="margin:auto; float:right; margin-right:10px; margin-bottom:2px;; margin-top:5px;" id="dangxuat" title="Đăng Xuất" onclick="DangXuat()">Đăng Xuất</button>
            <h2 id="tintuc" style="clear:right; margin-left:20px;color:#009;">Thông Báo</h2>
 
@@ -36,42 +59,34 @@ $('.carousel').carousel()
 				<tr>
 				<th>Tiêu Đề</th>
 				<th>Ngày Gửi</th>
-				<th> </th>
 				 </tr>
 				<tr>
-				<td><p>Thông Báo về đăng ký đề tài nghiên cứu khoa học năm 2016</p></td>
+				<td><div id="tb1"><a href = "#">Mẫu đơn đăng ký đề tài nghiên cứu khoa học năm 2017</a></div></td>
 				<td>05/09/2016</td>
-				<td> <a href = "ChiTietDeTai.docx">Xem Chi Tiết</a></td>
 				</tr>
 								<tr>
-				<td><p>Hưỡng dẫn đăng ký đề tài nghiên cứu khoa học năm 2016</p></td>
+				<td><div id="tb2"><a href = "#">Mẫu giấy đề nghị thanh toán kinh phí năm 2017</a></div></td>
 				<td>04/08/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 				<tr>
-				<td><p>Biểu mẫu đăng ký đề tài nghiên cứu khoa học năm 2016</p></td>
+				<td><div id="tb3"><a href = "#">Biểu mẫu đăng ký đề tài nghiên cứu khoa học năm 2016</a></div></td>
 				<td>26/07/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 				<tr>
-				<td><p>Giới Thiệu về đăng ký đề tài nghiên cứu khoa học năm 2016</p></td>
+				<td><div id="tb4"><a href = "#">Giới Thiệu về đăng ký đề tài nghiên cứu khoa học năm 2016</a></div></td>
 				<td>09/05/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 				<tr>
-				<td><p>Danh sách đề tài nghiên cứu khoa học năm 2016</p></td>
+				<td><div id="tb5"><a href = "#">Danh sách đề tài nghiên cứu khoa học năm 2016</a></div></td>
 				<td>30/01/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 				<tr>
-				<td><p>Thông báo về việc ký hợp đồng NCKH năm 2015</p></td>
+				<td><div id="tb2"><a href = "#">Thông báo về việc ký hợp đồng NCKH năm 2015</a></div></td>
 				<td>15/12/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 				<tr>
-				<td><p>Kết quả các đề tài nghiên cứu khoa học năm 2015</p></td>
+				<td><div id="tb2"><a href = "#">Kết quả các đề tài nghiên cứu khoa học năm 2015</a></div></td>
 				<td>28/10/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 
 	</table>
