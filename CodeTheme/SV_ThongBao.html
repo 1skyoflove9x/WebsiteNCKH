@@ -2,18 +2,129 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Quản lý NCKH</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NCKH</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/bootstrap.css">
   <script src="../Jquery/jquery-1.11.3.min.js"></script>
   <script src="../docs/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
-<script>
-$(document).ready(function() {
-	var lenght = $("#Center_Div").css("height");
-    $("#Left_Div").css("height",lenght);
-});
-$('.carousel').carousel()
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+			var url,data;
+			
+			url = "Thongbao.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+		$("#thongtincanhan").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "ThongTinCaNhanSV.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#trangthaidetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "TrangThaiDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#diemdanhgia").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DiemDanhGia.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#dangkydetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "DangKyDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#xemmadetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "XemMaDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#giahandetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "GiaHanDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#huydetai").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "HuyDeTai.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#nopbaocao").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "NopBaoCao.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		
+		$("#thongbao").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "ThongBao.html";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#tb1").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "https://docs.google.com/document/d/1n-fIkgIOj5rDOyNpMSXukG-ctDBBrXS7EgAxns69B14/pub?embedded=true";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+		$("#tb2").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "https://docs.google.com/document/d/1vsQ4dDQmYugAS__lkApEHB7tLfI75jGpkhOxCewGTzM/pub?embedded=true";
+			//url = "files/file-001.php";
+			$("#Center_Div").load(url);
+			
+        });
+	});
+	$('.carousel').carousel()
 </script>
 <style>
   .carousel-inner > .item > img,
@@ -25,8 +136,7 @@ $('.carousel').carousel()
 </head>
 
 <body>
-
-<div id="Main">
+	<div id="Main">
 
 	<div id="Top_Div">
 
@@ -73,66 +183,57 @@ $('.carousel').carousel()
 
 	</div>
 
-
     
     <div id="Left_Div">
-    	<div  class="menu" onclick="ThongBao()">Thông Báo</div>
-        <div  class="menu" onclick="ThongTinCaNhan()">Thông Tin Cá Nhân</div>
-        <div  class="menu" onclick="TrangThaiDeTai()">Trạng Thái Đề Tài</div>
-        <div  class="menu" onclick="DiemDanhGia()">Điểm Đánh Giá Nghiệm Thu</div>
-        <div  class="menu" onclick="DangKyDeTai()">Đăng Ký Đề Tài</div>   
-	<div  class="menu" onclick="XemMaSoDeTai()">Xem Mã Số Đề Tài</div>      
-	<div  class="menu" onclick="GiaHanDeTai()">Gia Hạn Đề Tài</div>   
-	<div  class="menu" onclick="HuyDeTai()">HuyDeTai</div>  
-	<div  class="menu" onclick="NopBaoCao()">Nộp Báo Cáo</div>  
+    	<div  class="menu" id="thongbao">Thông Báo</div>
+        <div  class="menu" id="thongtincanhan">Thông Tin Cá Nhân</div>
+        <div  class="menu" id="trangthaidetai">Trạng Thái Đề Tài</div>
+        <div  class="menu" id="diemdanhgia">Điểm Đánh Giá Nghiệm Thu</div>
+        <div  class="menu" id="dangkydetai">Đăng Ký Đề Tài</div>   
+	<div  class="menu" id="xemmadetai">Xem Mã Số Đề Tài</div>      
+	<div  class="menu" id="giahandetai">Gia Hạn Đề Tài</div>   
+	<div  class="menu" id="huydetai">HuyDeTai</div>  
+	<div  class="menu" id="nopbaocao">Nộp Báo Cáo</div>  
     </div>
     
-    <div id="Center_Div"> 
+    <div id="Center_Div" class="Center_Div"> 
            <button style="margin:auto; float:right; margin-right:10px; margin-bottom:2px;; margin-top:5px;" id="dangxuat" title="Đăng Xuất" onclick="DangXuat()">Đăng Xuất</button>
            <h2 id="tintuc" style="clear:right; margin-left:20px;color:#009;">Thông Báo</h2>
 
-           <form style=" border: groove; width:720px; height:500px; margin-left:15px; margin-right:15px;"> 
+           <form  style=" border: groove; width:720px; height:500px; margin-left:15px; margin-right:15px;"> 
 
 		<table style="margin-top:15px;" border =1 style ="cellspacing=10; cellpadding=20" align ="center" width = "700px;" height = "400px">
 				<tr>
 				<th>Tiêu Đề</th>
 				<th>Ngày Gửi</th>
-				<th> </th>
 				 </tr>
 				<tr>
-				<td><p>Thông Báo về đăng ký đề tài nghiên cứu khoa học năm 2016</p></td>
+				<td><div id="tb1"><a href = "#">Mẫu đơn đăng ký đề tài nghiên cứu khoa học năm 2017</a></div></td>
 				<td>05/09/2016</td>
-				<td> <a href = "ChiTietDeTai.docx">Xem Chi Tiết</a></td>
 				</tr>
 								<tr>
-				<td><p>Hưỡng dẫn đăng ký đề tài nghiên cứu khoa học năm 2016</p></td>
+				<td><div id="tb2"><a href = "#">Mẫu giấy đề nghị thanh toán kinh phí năm 2017</a></div></td>
 				<td>04/08/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 				<tr>
-				<td><p>Biểu mẫu đăng ký đề tài nghiên cứu khoa học năm 2016</p></td>
+				<td><div id="tb3"><a href = "#">Biểu mẫu đăng ký đề tài nghiên cứu khoa học năm 2016</a></div></td>
 				<td>26/07/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 				<tr>
-				<td><p>Giới Thiệu về đăng ký đề tài nghiên cứu khoa học năm 2016</p></td>
+				<td><div id="tb4"><a href = "#">Giới Thiệu về đăng ký đề tài nghiên cứu khoa học năm 2016</a></div></td>
 				<td>09/05/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 				<tr>
-				<td><p>Danh sách đề tài nghiên cứu khoa học năm 2016</p></td>
+				<td><div id="tb5"><a href = "#">Danh sách đề tài nghiên cứu khoa học năm 2016</a></div></td>
 				<td>30/01/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 				<tr>
-				<td><p>Thông báo về việc ký hợp đồng NCKH năm 2015</p></td>
+				<td><div id="tb2"><a href = "#">Thông báo về việc ký hợp đồng NCKH năm 2015</a></div></td>
 				<td>15/12/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 				<tr>
-				<td><p>Kết quả các đề tài nghiên cứu khoa học năm 2015</p></td>
+				<td><div id="tb2"><a href = "#">Kết quả các đề tài nghiên cứu khoa học năm 2015</a></div></td>
 				<td>28/10/2016</td>
-				<td> <a href = "XemChiTiet.css">Xem Chi Tiết</a></td>
 				</tr>
 
 	</table>
@@ -149,10 +250,12 @@ $('.carousel').carousel()
 
     <br/>
     </div>
+   
+
+
     <div id="Footer_Div">
 	</div>
-   
-</div>
-
+    
 </body>
+
 </html>

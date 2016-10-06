@@ -1,20 +1,50 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Quản lý khoa học</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-<script type="text/javascript" src="../Jquery/jquery-1.11.3.min.js"></script>
+<title>Quản lý NCKH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <script src="../Jquery/jquery-1.11.3.min.js"></script>
+  <script src="../docs/dist/js/bootstrap.min.js"></script>
+<script src="../assets/dist/jquery.validate.js"></script> 
+<script src="../assets/dist/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="../assets/dist/localization/messages_vi.js"></script>
+<script src="../script.js"></script>
 <script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
 <script>
-$(document).ready(function() {
-	var lenght = $("#Center_Div").css("height");
-    $("#Left_Div").css("height",lenght);
-$(".alert").alert()
+$(document).ready(function(){
+
+ var url,data;
+$("#tb1").click(function(e) {
+	//=======.load(url)================
+	var url,data;
+	
+	url = "https://docs.google.com/document/d/1n-fIkgIOj5rDOyNpMSXukG-ctDBBrXS7EgAxns69B14/pub?embedded=true";
+	//url = "files/file-001.php";
+	$("#Center_Div").load(url);
+	
 });
+$("#tb2").click(function(e) {
+	//=======.load(url)================
+	var url,data;
+	
+	url = "https://docs.google.com/document/d/1vsQ4dDQmYugAS__lkApEHB7tLfI75jGpkhOxCewGTzM/pub?embedded=true";
+	//url = "files/file-001.php";
+	$("#Center_Div").load(url);
+	
+});
+$(document).on('click', '.btn_remove', function(){  
+    var button_id = $(this).attr("id");   
+    $('#row'+button_id+'').remove();  
+});
+});
+$('.carousel').carousel()
 </script>
+<style>
+            .success{color:blue;}
+            .error {color:red;}
+        </style>
 </head>
 
 <body>
@@ -32,7 +62,7 @@ $(".alert").alert()
         <div  class="menu" onclick="ThongBaoAdmin()">Quản Lý Thông Báo</div> 
     </div>
     
-    <div id="Center_Div"> 
+    <div id="Center_Div" class="Center_Div"> 
            <button style="margin:auto; float:right; margin-right:10px; margin-bottom:2px;; margin-top:5px;" id="dangxuat" title="Đăng Xuất" onclick="DangXuat()">Đăng Xuất</button>
            <h2 id="QuanLyTaiKhoan" style="clear:right; margin-left:20px;color:#009;">Trang Chủ </h2>
 
@@ -53,6 +83,42 @@ $(".alert").alert()
               <tbody>
 </table>
 </br>
+<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Nhúng Thông Báo Từ Drive</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+
+<div id="Center_Div"> 
+           <h2 id="ThongTinCaNhan" style="clear:right; margin-left:20px;color:#009;"> Nhúng thông báo </h2>
+
+<form id="registration-form" class="form-horizontal">
+</br></br>
+<div class="form-group" style="margin-left:10px;margin-right:10px">
+    <label class="control-label" for="name">URL <span class="rq"> * </span></label>
+     <div class="controls">
+    <textarea type="url" class="form-control" rows="2" name="url" id="tenurl" minlength="20" placeholder="nhập link URL drive"  required></textarea>
+    </div>
+    </div>
+  <div class="form-group" style="margin-left:10px;margin-right:10px">
+    <label class="control-label" for="name">Tên Tiêu Đề <span class="rq"> * </span></label>
+     <div class="controls">
+    <textarea type="text" class="form-control" rows="2" name="name" id="tenieude" minlength="20" placeholder="nhập tên tiêu đề"  required></textarea>
+    </div>
+    </div>  
+     </form>
+     <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Trở Về</button>
+        <button type="button" class="btn btn-primary" onclick= "Save(); return false;">Đăng</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+   
+   
+ </br>
  <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
           <div class="table-responsive">
             <table class="table table-striped">
@@ -60,73 +126,63 @@ $(".alert").alert()
                 <tr>
                   <th>Stt</th>
                   <th>Tiêu Đề</th>
-                  <th>Chi Tiết</th>
                   <th>Thao Tác</th>
 	<th></th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr id="row1">
                   <td>1</td>
-                  <td>Thông Báo về việc đăng ký đề tài...</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
-              <td> <button type="button" class="btn btn-primary">Xóa</button></td>
+          <td><div id="tb1"><a href = "#">Mẫu đơn đăng ký đề tài nghiên cứu khoa học năm 2017</a></div></td>
+              <td> <button type="button"id="1" class="btn btn-primary btn_remove">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
   </tr>
-                                <tr>
+                                <tr id="row2">
                   <td>2</td>
-                  <td>Hưỡng dẫ về việc đăng ký đề tài...</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
-              <td> <button type="button" class="btn btn-primary">Xóa</button></td>
+               <td><div id="tb2"><a href = "#">Mẫu giấy đề nghị thanh toán kinh phí năm 2017</a></div></td>
+              <td> <button type="button" id="2" class="btn btn-primary btn_remove">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
   </tr>
-                <                <tr>
+                <                <tr id="row3">
                   <td>3</td>
-                  <td>Mẫu về việc đăng ký đề tài...</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
-              <td> <button type="button" class="btn btn-primary">Xóa</button></td>
+                <td><div id="tb3"><a href = "#">Biểu mẫu đăng ký đề tài nghiên cứu khoa học năm 2016</a></div></td>
+              <td> <button type="button"  id="3"class="btn btn-primary btn_remove">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
   </tr>
-                <tr>
+                <tr id="row4">
                   <td>4</td>
-                  <td>Danh sách đăng ký đề tài...</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
-              <td> <button type="button" class="btn btn-primary">Xóa</button></td>
+                <td><div id="tb4"><a href = "#">Giới Thiệu về đăng ký đề tài nghiên cứu khoa học năm 2016</a></div></td>
+              <td> <button type="button"  id="4"class="btn btn-primary btn_remove">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
   </tr>
-                <tr>
+                <tr id="row5">
                   <td>5</td>
-                  <td>Danh sách đề tài NCKH năm...</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
-              <td> <button type="button" class="btn btn-primary">Xóa</button></td>
+                <td><div id="tb5"><a href = "#">Danh sách đề tài nghiên cứu khoa học năm 2016</a></div></td>
+              <td> <button type="button" id="5"class="btn btn-primary btn_remove">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
   </tr>
-                <tr>
+                <tr id="row6">
                   <td>6</td>
-                  <td>Thông Báo về việc đăng ký đề tài...</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
-              <td> <button type="button" class="btn btn-primary">Xóa</button></td>
+               	<td><div id="tb2"><a href = "#">Thông báo về việc ký hợp đồng NCKH năm 2015</a></div></td>
+              <td> <button type="button" id="6" class="btn btn-primary btn_remove">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
   </tr>
-                <tr>
+                <tr id="row8">
                   <td>8</td>
-                  <td>Thông Báo về việc đăng ký đề tài...</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
-              <td> <button type="button" class="btn btn-primary">Xóa</button></td>
+              <td><div id="tb2"><a href = "#">Kết quả các đề tài nghiên cứu khoa học năm 2015</a></div></td>
+              <td> <button type="button" id="8" class="btn btn-primary btn_remove">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
   </tr>
-                <tr>
+                <tr id="row9">
                   <td>9</td>
-                  <td>Thông Báo về việc đăng ký đề tài...</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
-              <td> <button type="button" class="btn btn-primary">Xóa</button></td>
+               <td><div id="tb2"><a href = "#">Kết quả các đề tài nghiên cứu khoa học năm 2014</a></div></td>
+              <td> <button type="button" id="9" class="btn btn-primary btn_remove">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
   </tr>
-                <tr>
+                <tr id="row10">
                   <td>10</td>
-                  <td>Thông Báo về việc đăng ký đề tài...</td>
-	<td> <button type="button" class="btn btn-primary">Xem Chi Tiết</button></td>
-              <td> <button type="button" class="btn btn-primary">Xóa</button></td>
+                  <td><div id="tb2"><a href = "#">Kết quả các đề tài nghiên cứu khoa học năm 2013</a></div></td>
+              <td> <button type="button" id="10" class="btn btn-primary btn_remove">Xóa</button></td>
 	<td> <button type="button" class="btn btn-primary">Sửa</button></td>
   </tr>
               </tbody>

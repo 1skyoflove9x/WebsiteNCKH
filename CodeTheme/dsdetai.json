@@ -1,0 +1,81 @@
+ {  
+      "data"     :     [  
+           {  
+                "stt": "1",  
+                "madetai": "bk100",  
+                "tendetai": "Ứng dụng sim 900a"  ,
+                "tenchunhiem": "Nguyễn Quốc Trường",
+                "gvhd": "Nguyễn Văn A"	
+          },  
+ 			{  
+                "stt": "2",  
+                "madetai": "bk101",  
+                "tendetai": "Nước sạch cho nông thông"  ,
+                "tenchunhiem": "Lý Say Xình",
+                "gvhd": "Nguyễn Văn B"
+           },
+            {  
+                "stt": "3",  
+                "madetai": "bk103",  
+                "tendetai": "Công nghệ mới"  ,
+                "tenchunhiem": "Trần Trọng Trí",
+                "gvhd": "Nguyễn Văn A"
+           },
+            {  
+                "stt": "4",  
+                "madetai": "bk104",  
+                "tendetai": "Công nghệ kim loại"  ,
+                "tenchunhiem": "Phạm Công Hậu",
+                "gvhd": "Nguyễn Văn A"
+           },
+            {  
+                "stt": "5",  
+                "madetai": "bk105",  
+                "tendetai": "Điện thoại thông minh"  ,
+                "tenchunhiem": "Như Tiến",
+                "gvhd": "Nguyễn Văn B"
+           },
+            {  
+                "stt": "6",  
+                "madetai": "bk106",  
+                "tendetai": "Ứng dụng đọc tiếng anh"  ,
+                "tenchunhiem": "Nguyễn Ngọc Hoàng",
+                "gvhd": "Nguyễn Văn C"
+           },
+            {  
+                "stt": "7",  
+                "madetai": "bk107",  
+                "tendetai": "Nước uống sạch cho nông thôn"  ,
+                "tenchunhiem": "Trần Ngô Bảo",
+                "gvhd": "Nguyễn Văn C"
+           },
+            {  
+                "stt": "8",  
+                "madetai": "bk108",  
+                "tendetai": "Robot diều khiên từ xa"  ,
+                "tenchunhiem": "Nguyễn Tiến Thành",
+                "gvhd": "Nguyễn Văn D"
+           },
+            {  
+                "stt": "9",  
+                "madetai": "bk109",  
+                "tendetai": "Máy sản xuất tiền thật 100%"  ,
+                "tenchunhiem": "Trần Việt Tấn",
+                "gvhd": "Nguyễn Văn E"
+           },
+            {  
+                "stt": "10",  
+                "madetai": "bk110",  
+                "tendetai": "Máy được điểm 10 trong thi cử"  ,
+                "tenchunhiem": "Đỗ Lý Hạ",
+                "gvhd": "Nguyễn Văn F"
+           },
+            {  
+                "stt": "11",  
+                "madetai": "bk111",  
+                "tendetai": "Ứng dụng máy bay thành phương tiện công cộng"  ,
+                "tenchunhiem": "Lê Quốc Trung Trực",
+                "gvhd": "Nguyễn Văn G"
+           }
+      ]  
+ }  
