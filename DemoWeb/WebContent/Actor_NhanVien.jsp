@@ -53,15 +53,7 @@
 				
 	        });
 			
-			$("#xemdetai").click(function(e) {
-				//=======.load(url)================
-				var url,data;
-				
-				url = "XemDeTai.jsp";
-				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
-				
-	        });
+			
 			$("#detaiduocphancongpheduyet").click(function(e) {
 				//=======.load(url)================
 				var url,data;
@@ -333,13 +325,7 @@ if(user==null)
                                              <a class="menu" id="thongtincanhan"> <span class="glyphicon glyphicon-user"></span>  Thông tin cá nhân</a>
                                             </td>
                                         </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="xemdetai"> <span class="glyphicon glyphicon-th"></span>  Xem Đề Tài</a>
-                                            </td>
-                                        </tr>
-
+                  
                                            <tr>
                                             
                                             <td class="contentnews1" align="left">        

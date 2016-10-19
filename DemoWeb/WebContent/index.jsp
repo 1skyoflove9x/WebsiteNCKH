@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%!
+int couter=0;
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -25,6 +28,7 @@
             .error {color:red;}
         </style>
 </head>
+
 <body>
 <div class="row">
   <div class="col-xs-6 col-md-12 ">
@@ -72,12 +76,15 @@
     <input type="password" name="password" id="password"  placeholder="nhập mật khẩu" required>
     <input type="submit" name="Submit" class="login login-submit" value="login">
   </form>
-    
+<%
+couter+=1;
+%>
+   <p>Truy Cập:<%=couter %>/10000</p>
   <div class="login-help">
-     <a href="#">Quên mật khẩu</a>
+     <a href="#">Quên mật khẩu</a></br>
   </div>
-</div>   
 
+</div>   
 	</br></br>		      
 <div class="col-md-6" style="margin-left:100px;"><span >Copyright © 2016 HCMUTE - All Rights Reserved</span></div>
 <div class="col-md-4" style="margin-left:100px;">

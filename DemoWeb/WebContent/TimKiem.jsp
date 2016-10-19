@@ -15,6 +15,8 @@
 <script src="ThuVien/Jquery/jquery.validate.min.js"></script> 
 <script type="text/javascript" src="ThuVien/Jquery/localization/messages_vi.js"></script>
 <script src="ThuVien/Js/script.js"></script>
+   <link rel="stylesheet" type="text/css" href="ThuVien/css/jquery.dataTables.css"/>  
+           <script type="text/javascript" src="ThuVien/Jquery/jquery.dataTables.js"></script> 
     <script>
       $("nav.navbar-fixed-top").autoHidingNavbar();
     </script>
@@ -29,6 +31,16 @@ $(document).ready(function(){
 		$("#Center_Div").load(url);
 		
 	});
+	  $('#loaddata').DataTable({  
+	         "ajax"     :     "Data/dsdetai.json",  
+	         "columns"     :     [  
+	              {     "data"     :     "stt"     },  
+	              {     "data"     :     "madetai"}, 
+	              {     "data"     :     "tendetai"},
+	              {     "data"     :     "tenchunhiem"},
+	              {     "data"     :     "gvhd"}  
+	         ]  
+	    }); 
 	});
 	$('.carousel').carousel()
 
@@ -156,12 +168,6 @@ select.change(function()
     <div class="col-sm-4">
       <select id="madetaiSelect" style="width:200px"></select>
     </div>
-    <div class="col-sm-4">
-      <input type="text" class="form-control" name="name" id="keyword" placeholder="Nhập từ cần kiếm..">
-    </div>
-     <div class="col-sm-2">
-      <button type="submit" class="btn btn-primary" >tìm</button>
-    </div>
 </br></br>
   </div>
     </br>
@@ -185,7 +191,21 @@ select.change(function()
             </table>
                
           </div>
-          </form>
+         
+          <div class="container" style=" width:700px; height:700px;margin-left:5px; margin-right:50px;margin-bottom:35px;">  
+                <table id="loaddata" class="table table-bordered">  
+                     <thead>  
+                          <tr>  
+                                <th width="2%">STT</th>  
+                               <th width="3%">Mã Đề Tài</th>  
+                               <th width="12%">Tên Đề Tài</th>  
+                               <th width="10%">Họ Tên Chủ Nhiệm</th> 
+                               <th width="10%">Giáo Viên Hướng Dẫn</th> 
+                          </tr>  
+                     </thead>  
+                </table>  
+           </div>  
+            </form>
 </form>   
 </body>
 </html>
