@@ -1,0 +1,58 @@
+	 body {
+	 background:url(../Images/Background.png);
+	 }
+	 #dangnhap
+	 {
+		float:right;
+		color:#009;
+		margin-right:2px;
+		margin-top:2px;
+		font-weight:600 
+		}
+	 .menu {
+		font-size:15px;
+		font-weight:bold;
+		border-style:groove;
+		color: #FFF;
+		background-color: #03F;;
+		padding:5px;
+		display:block;
+		margin-top:5px;
+		margin-left:5px;
+		margin-right:5px;
+		 }
+	 .menu:hover {
+		 background:#FFF;
+		color: #000;
+		 } 
+	
+	#Main {
+		margin:auto;
+		width:1000px;	
+		border: 5px ridge #03F;
+		background:#FFF;
+		}
+	#Top_Div {
+		width:1000px;
+		height:145px;
+		background-color:#FFF;
+		border-bottom:5px ridge #00C;		
+		}
+
+	#Left_Div {
+		float:left;
+		width:200px;
+		border-right:5px ridge #00C;
+		background-color:#FFF;
+		}
+	#Center_Div {
+		float:left;
+		width:795px;
+		background-color:#FFF;
+		}
+	#Footer_Div {
+		width:1000px;
+		background-color:#FFF;
+		clear:both;
+		border-top:5px ridge #00C;
+		}

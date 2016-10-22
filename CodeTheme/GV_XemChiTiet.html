@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Quản lý khoa học</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="../Jquery/jquery-1.11.3.min.js"></script>
+<script src="../docs/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
+<script>
+$(document).ready(function() {
+	var lenght = $("#Center_Div").css("height");
+    $("#Left_Div").css("height",lenght);
+$(".alert").alert()
+});
+function Save()
+    {
+      alert("Đã Gửi thành công");
+      location = "GV_TrangChu.html"
+    }
+    function TroLai()
+    {
+      
+      location = "GV_DangKyDeTai.html"
+    }
+</script>
+
+</head>
+
+<body>
+<div id="Main">
+	<div id="Top_Div">
+		<a  href="http://hcmute.edu.vn/"><img style="margin:0px;" alt="" src="../Images/NCKH.jpg" /></a>
+		<img src="../Images/SPKT.png" style="margin:0px;" />
+    </div>
+
+    
+    <div id="Left_Div">
+  <div  class="menu" onclick="TrangChuGV()">Trang Chủ</div>
+        <div  class="menu" onclick="ThongTinGV()">Thông Tin Cá Nhân</div>
+        <div  class="menu" onclick="XemDeTaiGV()">Xem Đề Tài</div>
+        <div  class="menu" onclick="DeTaiDuocPhanCongPheDuyetGV()">Đề Tài Được Phân Công Phê Duyệt</div>
+        <div  class="menu" onclick="DeTaiDuocPhanCongPhanBienGV()">Đề Tài Được Phân Công Phản Biện</div>
+        <div  class="menu" onclick="DeTaiDangHuongDanGV()">Đề Tài Đang Hướng Dẫn</div>
+        <div  class="menu" onclick="DuyetHuyDeTaiGV()">Duyệt Hủy Đề Tài</div>
+        <div  class="menu" onclick="DuyetDangKyDeTaiGV()">Duyệt Đăng Kí Đề Tài</div>
+        <div  class="menu" onclick="DeTaiCuaToiGV()">Đề Tài Của Tôi</div>
+    </div>
+    
+    <div id="Center_Div"> 
+           <button style="margin:auto; float:right; margin-right:10px; margin-bottom:2px;; margin-top:5px;" id="dangxuat" title="Đăng Xuất" onclick="DangXuat()">Đăng Xuất</button>
+           <h2 id="ThongTinCaNhan" style="clear:right; margin-left:20px;color:#009;">Xem Chi Tiết Đề Tài NCKH</h2>
+
+ <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
+               
+<form class="form-inline" role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Tên Đề Tài</label>
+    <textarea class="form-control" rows="3"placeholder="nhập tên đề tài"></textarea>
+  </div></br>
+
+<div class="form-group >
+    <label for="inputEmail3" class="col-sm-3 control-label">Họ Tên Chủ Nhiệm</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="nhập tên chủ nhiệm">
+    </div>
+<label for="inputEmail3" class="col-sm-2 control-label">Ngày Sinh</label>
+    <div class="col-sm-3">
+      <input type="date" class="form-control" id="inputEmail3">
+    </div>
+</br></br>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Đơn Vị</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập khoa, ban, phòng công tác">
+    </div>
+<label for="inputEmail3" class="col-sm-2 control-label">Số Điện Thoại</label>
+    <div class="col-sm-3">
+      <input type="Number" class="form-control" id="inputEmail3"placeholder="Nhập số điện thoại">
+    </div>
+</br></br>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+    <div class="col-sm-4">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="nhập địa chỉ email">
+    </div>
+<label for="inputEmail3" class="col-sm-2 control-label">Giới tính</label>
+    <div class="col-sm-3">
+     <label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Nam
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> Nữ
+    </div>
+</br></br>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Lớp</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="nhập lớp sinh viên theo học">
+    </div>
+<label for="inputEmail3" class="col-sm-2 control-label">Niên Khóa</label>
+    <div class="col-sm-3">
+      <input type="Number" class="form-control" id="inputEmail3"placeholder="Nhập niên khóa học của sinh viên">
+    </div>
+</br></br>
+ </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Giáo Viên Hướng Dẫn</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập tên GV + học hàm hoặc học vị">
+    </div>
+</br></br>
+  </div>
+
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Lĩnh Vực Nghiên Cứu</label>
+    <div class="col-sm-9">
+     <label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Tự Nhiên
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Xã Hội
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Giáo Dục
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Kỹ Thuật
+</label></br>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Nông Lâm Ngư
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Y Dược
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Môi Trường
+</label>
+    </div>
+</br></br>
+  </div>
+ 
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Loại Hình Cơ Bản</label>
+    <div class="col-sm-9">
+     <label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Cơ Bản
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Ứng Dụng
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Triển Khai
+</label>
+    </div>
+</br></br>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Cơ Quan Chủ Trì</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="Nhâp tên đơn vị tổ chức NCKH">
+    </div>
+</br></br>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Tình Hình Trong Nước</label>
+    <div class="col-sm-9">
+      <textarea class="form-control" rows="3"placeholder="Nhập các vấn đề liên quan đến đề tài có ở trong nước"></textarea> 
+    </div>
+</br></br></br></br>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-4 control-label">Tình Hình Ngoài Nước</label>
+    <div class="col-sm-8">
+       <textarea class="form-control" rows="3"placeholder="Nhập các vấn đề liên quan đến đề tài có ở ngoài nước"></textarea> 
+    </div>
+</br></br></br></br>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-4 control-label">Các Công Trình Liên Quan</label>
+    <div class="col-sm-8">
+       <textarea class="form-control" rows="3"placeholder="Những sản phẩm đã có trên thị trường"></textarea> 
+    </div>
+</br></br></br></br>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-4 control-label">Tính Cấp Thiết</label>
+    <div class="col-sm-8">
+       <textarea class="form-control" rows="3"placeholder="Nhập tính cấp thiết của ứng dụng"></textarea> 
+    </div>
+</br></br></br></br>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-4 control-label">Mục Tiêu Đề Tài</label>
+    <div class="col-sm-8">
+       <textarea class="form-control" rows="3"placeholder="Mục Tiêu Đề Tài"></textarea> 
+    </div>
+</br></br></br></br>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-4 control-label">Phương Pháp Nghiên Cứu</label>
+    <div class="col-sm-8">
+       <textarea class="form-control" rows="3"placeholder="Nhập Phương Pháp Nghiên Cứu"></textarea> 
+    </div>
+</br></br></br></br>
+  </div>
+
+<div class="form-group">
+    <label for="exampleInputEmail1">Nôi Dung Nghiên Cứu Và Tiến Độ Thực Hiện</label>
+    <table class="table table-bordered">
+ <tr><th>Stt</th><th>Nội dung công việc</th> <th>Sản phẩm phải đạt</th><th>Thơi Gian</th><th>Người Thực Hiện</th> </tr>
+<tr>
+<th> <input type="number" class="form-control" id="inputEmail3"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập nội dung công việc"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập sản phẩm phải đạt"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập thời gian( số tháng)"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập người thực hiện"></th>
+</tr>
+<tr>
+<th> <input type="number" class="form-control" id="inputEmail3"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập nội dung công việc"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập sản phẩm phải đạt"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập thời gian( số tháng)"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập người thực hiện"></th>
+</tr> <button type="add" class="btn btn-default">Thêm Công Việc</button>
+	</table>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Loại Sản Phẩm</label>
+    <div class="col-sm-10">
+     <label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Mẫu
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Vật Liệu
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Thiết Bị Máy Móc
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Phương Pháp
+</label></br></br>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Giống Cây
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Giống Gia Súc
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Quy Trình Công Nghệ
+</label>
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> Báo Cáo Phân Tích
+</label></br></br>
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1">Tiêu Chuẩn
+</label>
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1">Quy Phạm
+</label>
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1">Sơ Đồ
+</label>
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1">Chương Trình Máy Tính
+</label></br></br>
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1">Tư Liệu Dự Báo
+</label>
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1">Đề Án
+</label>
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1">Luận Chứng Kinh Tế
+</label>
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1">Bản Kiến Nghị
+</label></br></br>
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1">Sản Phâm Khác
+</label>
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1">Dây Chuyền Công Nghệ
+</label>
+    </div>
+  </div>
+</br>
+<div class="form-group">
+    <label for="exampleInputEmail1">Tên Sản Phẩm, Số Lượng Và Yêu Cầu Khoa Học Đối Với Sản Phẩm</label></br>
+    <table class="table table-bordered">
+ <tr><th>Stt</th><th>Tên sản phẩm</th> <th>Số lượng</th><th>Yêu cầu khoa học</th> </tr>
+<tr>
+<th> <input type="number" class="form-control" id="inputEmail3"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập sản phẩm"></th>
+<th> <input type="number" class="form-control" id="inputEmail3"></input></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập yêu cầu khoa học"></th>
+</tr>
+<tr>
+<th> <input type="number" class="form-control" id="inputEmail3"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập sản phẩm"></th>
+<th> <input type="number" class="form-control" id="inputEmail3"></input></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập yêu cầu khoa học"></th>
+</tr><button type="add" class="btn btn-default">Thêm sản phẩm</button>
+	</table>
+  </div>
+
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-4 control-label">Địa Chỉ ứng Dụng</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="nhập địa chỉ ứng dụng của sản phẩm">
+    </div>
+</div>
+</br></br>
+<div class="form-group">
+ <label for="inputEmail3" class="col-sm-4 control-label">Kinh Phí Dự Trù</label>
+    <div class="col-sm-8">
+      <input type="number" class="form-control" id="inputEmail3">
+    </div></br>
+    <table class="table table-bordered">
+ <tr><th>Stt</th><th>Công việc</th> <th>Thành tiền</th><th>Ghi chú</th> </tr>
+<tr>
+<th> <input type="number" class="form-control" id="inputEmail3"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập công việc"></th>
+<th> <input type="number" class="form-control" id="inputEmail3"></input></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập ghi chú "></th>
+</tr>
+<tr>
+<th> <input type="number" class="form-control" id="inputEmail3"></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập công việc"></th>
+<th> <input type="number" class="form-control" id="inputEmail3"></input></th>
+<th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập ghi chú "></th>
+</tr><button type="add" class="btn btn-default">Thêm kinh phí</button>
+	</table>
+  </div>
+</br>
+</form>
+           </form>   
+  <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Gửi Đánh Giá</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+
+<div id="Center_Div"> 
+           <h2 id="ThongTinCaNhan" style="clear:right; margin-left:20px;color:#009;">Gửi ý kiến đánh giá </h2>
+
+ <div class="form-group ">
+    <textarea class="form-control" rows="5"placeholder="nhập ý kiến đánh giá"></textarea>
+  </div> 
+           </form>   
+<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Trở Về</button>
+        <button type="button" class="btn btn-primary"  onclick= "Save(); return false;" >Gửi</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+	<button type="back" class="btn btn-default" onclick= "TroLai(); return false;">Trở Lại</button>    
+    </div>
+    <div id="Footer_Div">
+	</div>
+</div>
+
+</body>
+</html>

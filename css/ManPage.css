@@ -1,0 +1,61 @@
+	 body {
+	 background:url(../Images/Background.png);
+	 }
+	 #dangnhap
+	 {
+		float:center;
+		color:#009;
+		margin-right:2px;
+		margin-top:2px;
+		font-weight:300
+		}
+	 .menu {
+		font-size:20px;
+		font-weight:bold;
+		border-style:groove;
+		color: #FFF;
+		background-color: #03C;;
+		padding:5px;
+		display:block;
+		margin-top:5px;
+		margin-left:5px;
+		margin-right:5px;
+		 }
+	 .menu:hover {
+		 background:#FFF;
+		color: #000;
+		 } 
+	
+	#Main {
+		margin:auto;
+		width:1000px;	
+		border: 3px ridge #00C;
+		background:#FFF;
+		}
+	#Top_Div {
+		width:1000px;
+		height:145px;
+		background-color:#FFF;
+		border-bottom:5px ridge #00C;		
+		}
+
+	#Left_Div {
+		float:left;
+		width:250px;
+		border-right:5px ridge #00C;
+		background-color:#FFF;
+		}
+	#Center_Div {
+		margin-left:225px;
+		margin-top:100px;
+		float:center;
+		width:450px;
+		background-color:#FFF;
+		}
+	#Footer_Div {
+		width:1000px;
+		height:120px;
+		background-color:#FFF;
+		clear:both;
+		border-top:5px ridge #00C;
+		}

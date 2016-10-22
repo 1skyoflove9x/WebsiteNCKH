@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Quản lý khoa học</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="../Jquery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../DieuHuongpage/DieuHuongTrang.js"></script>
+<script>
+$(document).ready(function() {
+	var lenght = $("#Center_Div").css("height");
+    $("#Left_Div").css("height",lenght);
+$(".alert").alert()
+});
+</script>
+</head>
+
+<body>
+<div id="Main">
+	<div id="Top_Div">
+		<a  href="http://hcmute.edu.vn/"><img style="margin:0px;" alt="" src="../Images/NCKH.jpg" /></a>
+		<img src="../Images/SPKT.png" style="margin:0px;" />
+    </div>
+
+    
+    <div id="Left_Div">
+    	 <div  class="menu" onclick="TrangChuGV()">Trang Chủ</div>
+        <div  class="menu" onclick="ThongTinGV()">Thông Tin Cá Nhân</div>
+        <div  class="menu" onclick="XemDeTaiGV()">Xem Đề Tài</div>
+        <div  class="menu" onclick="DeTaiDuocPhanCongPheDuyetGV()">Đề Tài Được Phân Công Phê Duyệt</div>
+        <div  class="menu" onclick="DeTaiDuocPhanCongPhanBienGV()">Đề Tài Được Phân Công Phản Biện</div>
+        <div  class="menu" onclick="DeTaiDangHuongDanGV()">Đề Tài Đang Hướng Dẫn</div>
+        <div  class="menu" onclick="DuyetHuyDeTaiGV()">Duyệt Hủy Đề Tài</div>
+        <div  class="menu" onclick="DuyetDangKyDeTaiGV()">Duyệt Đăng Kí Đề Tài</div>
+        <div  class="menu" onclick="DeTaiCuaToiGV()">Đề Tài Của Tôi</div>
+    </div>
+    
+    <div id="Center_Div"> 
+           <button style="margin:auto; float:right; margin-right:10px; margin-bottom:2px;; margin-top:5px;" id="dangxuat" title="Đăng Xuất" onclick="DangXuat()">Đăng Xuất</button>
+           <h2 id="QuanLyTaiKhoan" style="clear:right; margin-left:20px;color:#009;">Duyệt Hủy Đề Tài</h2>
+
+ <form style=" border: groove;width:700px;height:700px; margin-left:15px; margin-right:15px;">	
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Stt</th>
+                  <th>Mã Đề Tài</th>
+                  <th>Tên Đề Tài</th>
+                  <th>Họ Tên Chủ Nhiệm</th>
+                  <th>Lý Do</th>
+	<th></th>
+	<th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>NN1003</td>
+                  <td>Nghiên cứu tạo lúa mới</td>
+                  <td>Trần Trọng Trí</td>
+                  <td>Vì thời gian không cho phép và nhân lực không đủ</td>
+	<td> <button type="button" class="btn btn-primary">Duyệt</button></td>
+	<td> <button type="button" class="btn btn-primary">Từ Chối</button></td>
+                </tr>
+                <tr>
+                 <td>2</td>
+                  <td>CNT1032</td>
+                  <td>Công nghệ Nano </td>
+                  <td>Lê Quốc Trung Trực</td>
+                  <td>Vì khả năng cá nhân có hạn+nguồn nhân lực,vật lực không đủ</td>
+	<td> <button type="button" class="btn btn-primary">Duyệt</button></td>
+	<td> <button type="button" class="btn btn-primary">Từ Chối</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+</form>
+           </form>   
+    </div>
+    <div id="Footer_Div">
+	</div>
+</div>
+
+</body>
+</html>
