@@ -42,16 +42,13 @@ $(document).ready(function(){
 </head>
 
 <body>
-   <div id="Center_Div" class="Center_Div"> 
           <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Xem Đề Tài</strong></div>
     </div>
     </div>
-<form style=" border: groove;width:700px;margin-left:15px; margin-right:15px;">	
             <br /><br />  
-           <div class="container" style=" width:700px; height:700px;margin-left:5px; margin-right:50px;margin-bottom:35px;">  
-                <table id="loaddata" class="table table-bordered">  
+                <table id="loaddata" class="table table-bordered" >  
                      <thead>  
                           <tr>  
                                 <th width="2%">STT</th>  
@@ -61,10 +58,7 @@ $(document).ready(function(){
                                <th width="10%">Giáo Viên Hướng Dẫn</th> 
                           </tr>  
                      </thead>  
-                </table>  
-           </div>  
-
-           </form>   
+                </table>   
 
 </form>
 

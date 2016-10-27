@@ -27,14 +27,14 @@
 			var url,data;
 			url = "TrangChu_Admin.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			$("#trangchu").click(function(e) {
 				//=======.load(url)================
 				var url,data;
 				
 				url = "TrangChu_Admin.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -44,7 +44,7 @@
 				
 				url = "QuanLyTaiKhoan.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			$("#postthongbao").click(function(e) {
@@ -53,7 +53,7 @@
 				
 				url = "PostThongBao.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -63,7 +63,7 @@
 				
 				url = "ImportFile.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -73,7 +73,7 @@
 				
 				url = "https://docs.google.com/document/d/15-zwTehY0-D3mKTVEkqpwWRb25kWzZ0b-5M1UkMfW7k/pub?embedded=true";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#lod").load(url);
 				
 			});
 	});
@@ -94,6 +94,81 @@ if(user==null)
 	return;
 }
 %>
+
+<div class="col-xs-12 col-sm-12 ">
+
+	<div class="page-header no-margin no-padding">
+	<div class="container" >
+	 <a  href="http://hcmute.edu.vn/">
+	 <img src="ThuVien/Images/banner.jpg" class="img-responsive" /></a>
+
+	</div>
+</div>
+</div>
+
+<div id="Main">
+<div class="container">
+<div class="col-xs-12 col-md-3 ">	
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
+<div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">    
+       <span class="icon-bar"></span> 
+       <span class="icon-bar"></span> 
+       <span class="icon-bar"></span> 
+       </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-left nav-tabs">
+        <li> <a class="menu" id="trangchu"> <span class="glyphicon glyphicon-list-alt"></span>  Trang Chủ</a></li>
+        <li>  <a class="menu" id="quanlytaikhoan"> <span class="glyphicon glyphicon-folder-open"></span>  Quản Lý Tài Khoản</a></li>
+        <li>  <a class="menu" id="importfile"> <span class="glyphicon glyphicon-sort"></span>  ImportFile</a></li>
+ 		 <li>  <a class="menu" id="postthongbao"> <span class="glyphicon glyphicon-upload"></span>  Post Thông Báo</a></li>
+     <li> <a class="menu" href="home"> <span class="glyphicon glyphicon-eject"></span>  Đăng Xuất</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+
+<div class="col-xs-12 col-md-9">
+<div id="load">
+
+</div>
+</div>
+</div>
+</div>
+<footer class="site-footer">
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-5">
+		<address>
+		
+		
+		</address>	
+		</div>
+		</div>
+		<div class="bottom-footer">
+		<div class="col-md-5">
+		Copyright @2013</br>
+		Trường Đại học sư phạm kỹ thuật TP. HCM</br>
+		Địa Chỉ 1, Võ Văn Ngân,Phường Linh Chiểu,Quận Thủ Đức,Thành Phố Hồ Chí Minh</br>
+		Điện thoại:(+84-8)38968641 -(+84-8)3896133</br>
+		E-mail:ic@hcmute.edu.vn
+		</div>
+		<div class="col-md-7">
+		<ul class="footer-nav">
+		<li><a href="http://hcmute.edu.vn/">Trang Chủ</a>
+		<li><a href="https://www.facebook.com/SV.SPKT/?fref=ts">Fb</a>
+		<li><a href="https://www.youtube.com/user/UTECommunicationDept">youtube</a>
+		
+		</ul>
+		</div>
+	</div>
+</div>
+</footer>
+
 <div class="row">
   <div class="col-xs-6 col-md-12 ">
 	<table align="center" border="0" width="1002" id="table1" cellspacing="0" cellpadding="0">

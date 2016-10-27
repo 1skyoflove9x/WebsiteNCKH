@@ -34,7 +34,6 @@ $('.carousel').carousel()
         </style>
 </head>
 <body>
-   <div id="Center_Div" class="Center_Div"> 
           <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Điểm Đánh Giá Đề Tài</strong></div>
@@ -42,8 +41,8 @@ $('.carousel').carousel()
     </div>
     
     <div class="form-group">
-    <label for="inputEmail3" class="col-sm-4 control-label">Điểm đánh giá của Hội Đồng :</label>
-    <div class="col-sm-8">
+    <label for="inputEmail3" class="col-xs-12 col-md-4 control-label">Điểm đánh giá của Hội Đồng :</label>
+    <div class="col-xs-12 col-md-8">
 <select class="form-control">
   <option>Th.s </option>
   <option>Gs.</option>
@@ -56,11 +55,11 @@ $('.carousel').carousel()
   </div>
 
 
- <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
+ <form style=" border: groove;width:100%; margin-left:1%; margin-right:1%;">	
 </br>
 <div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Thang Điểm :</label>
-    <div class="col-sm-3">
+    <label for="inputEmail3" class="col-xs-6 col-md-3 control-label">Thang Điểm :</label>
+    <div class="col-xs-6 col-md-3">
 <label class="radio-inline">
   <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 100
 </label>
@@ -68,15 +67,12 @@ $('.carousel').carousel()
   <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 10
 </label>
     </div>
-<label for="inputEmail3" class="col-sm-2 control-label">Xếp Loại</label>
-    <div class="col-sm-4">
-    <button type="button" class="btn btn-primary">Xuất Sắc</button> 
-    </div>
+<label for="inputEmail3" class="col-xs-12 col-md-6 control-label">Xếp Loại: Xuất Sắc</label>
 </br></br>
  </div>
 <div class="form-group">
-    <span style=" color:blue;text-align: left;font-size: 18px">Điểm đánh giá chi tiết</span></br>
-      <table class="table table-bordered">
+    <span style=" color:blue;text-align: left;font-size: 1.9rem">Điểm đánh giá chi tiết</span></br>
+      <table class="table table-bordered" >
  <tr><th>Stt</th><th>Nội dung đánh giá</th> <th>Số điểm đạt được</th><th>ghi chú</th></tr>
 <tr>
 <th> <p>1</p></th>

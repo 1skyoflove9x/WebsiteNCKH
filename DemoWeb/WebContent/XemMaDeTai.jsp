@@ -34,7 +34,6 @@ $('.carousel').carousel()
         </style>
 </head>
 <body>
-   <div id="Center_Div" class="Center_Div"> 
           <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Xem Mã Số Đề Tài</strong></div>
@@ -43,41 +42,44 @@ $('.carousel').carousel()
        <input type="text" name="button" class="btn btn-primary" value="Chưa Có Mã Số">
     <form style=" border: groove; margin-left:15px; margin-right:15px;">	
 </br>
-<div class="col-sm-2">
+<div class="col-xs-12 col-md-2 ">
 <strong> Họ Và Tên:</strong>
     </div>
-<div class="col-sm-5">
+<div class="col-xs-12 col-md-4 ">
 Nguyễn Quốc Trường
     </div>
-<div class="col-sm-2">
+<div class="col-xs-12 col-md-2">
 <strong>Mã Số</strong>
     </div>
-<div class="col-sm-3">
+<div class="col-xs-12 col-md-4  ">
 14110425
     </div></br></br>
 
-<div class="col-sm-2">
+<div class="col-xs-12 col-md-2  ">
 <strong> Khoa:</strong>
     </div>
-<div class="col-sm-5">
+<div class="col-xs-12 col-md-4 ">
 Đào tạo chất lượng cao
     </div>
 <div class="col-sm-2">
 <strong>Lớp</strong>
     </div>
-<div class="col-sm-3">
+<div class="col-xs-12 col-md-2 ">
 14110CL1
     </div></br></br>
-<div class="col-sm-2">
+<div class="col-xs-12 col-md-2  ">
 <strong> Tên Đề Tài:</strong>
     </div>
-<div class="col-sm-10">
-Ứng dụng định vị GPS và sim 900A để hỗ trợ người tham gia giao thông ở Tp. Hồ Chí Minh
+<div class="col-xs-12 col-md-10  ">
+<p>Ứng dụng định vị GPS và sim 900A để hỗ trợ người tham gia giao thông ở Tp. Hồ Chí Minh</p>
     </div></br></br>
- <label for="exampleInputEmail1">     Lý Do</label></br>
-<input class="form-control" id="disabledInput" type="text" placeholder=" Đề tài đã được cấp mẫ đề tài" disabled>
+<div class="col-xs-12 col-md-2">
+<strong>Lý Do:</strong>
+</div>
+ <div class="col-xs-12 col-md-10 ">
+<p>Đề tai đang chờ phê duyệt</p>
+</div></br></br>
 </form>
-           </form> 
     
 </body>
 </html>

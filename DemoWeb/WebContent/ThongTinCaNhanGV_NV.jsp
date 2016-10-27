@@ -35,13 +35,12 @@ $('.carousel').carousel()
 </head>
 
 <body>
-<div id="Center_Div" class="Center_Div"> 
           <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Thông Tin Cán Bộ</strong></div>
     </div>
     </div>
-     <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
+     <form style=" border: groove;width:100%; margin-left:1%; margin-right:1%;">	
 <form class="form-inline" role="form">
 </br></br>
 <div class="form-group">
@@ -131,7 +130,6 @@ $('.carousel').carousel()
     <div class="modal-content">
     
 
-<div id="Center_Div"> 
            <h2 id="ThongTinCaNhan" style="clear:right; margin-left:20px;color:#009;">Cập Nhật Thông Tin Cá Nhân </h2>
 
 <form id="signupForm1" class="form-horizontal">

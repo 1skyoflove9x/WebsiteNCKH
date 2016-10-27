@@ -41,78 +41,70 @@ $('.carousel').carousel()
     
                    
 <form id="signupForm1" class="form-horizontal">
-  <div class="form-control-group" style="margin-left:20px;">
-    <label class="control-label" for="name">Tên Đề Tài <span class="rq"> * </span></label>
-     <div class="controls">
-    <textarea type="text" class="form-control" rows="3" name="name" id="tendetai" minlength="20" placeholder="nhập tên đề tài"  required></textarea>
+  <div class="form-control-group" style="margin-left:1%;">
+    <label class="col-xs-12 col-md-12  ">Tên Đề Tài <span class="rq"> * </span></label>
+     <div class="col-xs-12 col-md-12 ">
+    <textarea type="text" class="form-control" rows="2" name="name" id="tendetai" minlength="20" placeholder="nhập tên đề tài"  required></textarea>
+   </br>
     </div>
-  </div></br></br>
 
-<div class="form-control-group">
-    <label class="col-sm-3 control-label" for="name">Họ Tên Chủ Nhiệm <span class="rq"> *</label>
-    <div class="col-sm-4">
+    <label class="col-xs-12 col-md-3  " for="name">Họ Tên Chủ Nhiệm <span class="rq"> *</label>
+    <div class="col-xs-12 col-md-9 ">
      <input type="text"  class="form-control" name="name" id="name" placeholder="Nhập tên chủ nhiệm"  minlength="6">
+       </br>
     </div>
-<label for="name" class="col-sm-2 control-label">Ngày Sinh</label>
-    <div class="col-sm-3">
+  
+<label for="name" class="col-xs-12 col-md-3 ">Ngày Sinh</label>
+    <div class="col-xs-12 col-sm-9  ">
       <input type="date" class="form-control" name="ngaysinh" id="ngaysinh">
+       </br>
     </div>
-</br></br></br></br>
-  </div>
-
-<div class="form-control-group">
-    <label class="col-sm-3 control-label" for="name">Đơn Vị</label>
-    <div class="col-sm-4">
+   
+    <label class="col-xs-12 col-md-3 " for="name">Đơn Vị</label>
+    <div class="col-xs-12 col-md-9">
      <input type="text"  class="form-control" name="name" id="donvi" placeholder="Nhập tên đơn vị" minlength="6">
+       </br>
     </div>
-<label for="inputEmail3" class="col-sm-2 control-label">Ngày Sinh</label>
-    <div class="col-sm-3">
-      <input type="date" class="form-control"  id="inputEmail3">
+<label class="col-xs-12 col-md-3">Ngành</label>
+    <div class="col-xs-12 col-md-9">
+      <input type="text" class="form-control"  name="name" id="nganh" placeholder="Nhập tên ngành" minlength="6">
+      </br>
     </div>
-</br></br></br></br>
-  </div>
 
-<div class="form-group">
-    <label class="col-sm-3 control-label" for="email">Email</label>
-    <div class="col-sm-4">
+    <label class="col-xs-12 col-md-3" >Email</label>
+    <div class="col-xs-12 col-md-9">
       <input type="email" class="form-control"  name="email" id="email" placeholder="nhập địa chỉ email">
+      </br>
     </div>
-<label for="inputEmail3" class="col-sm-2 control-label">Giới tính</label>
-    <div class="col-sm-3">
+<label class="col-xs-12 col-md-3">Giới tính</label>
+    <div class="col-xs-12 col-md-9">
      <label class="checkbox-inline">
   <input type="radio" id="nam"  name="optionsRadios"  value="option1"> Nam
 </label>
 <label class="checkbox-inline">
   <input type="radio" id="nu"   name="optionsRadios" value="option2"> Nữ
   </label>
+  </br></br>
     </div>
-</br></br></br>
-  </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Lớp</label>
-    <div class="col-sm-4">
+    <label class="col-xs-12 col-md-3">Lớp</label>
+    <div class="col-xs-12 col-md-9">
       <input type="text" class="form-control" name="name" id="lop" placeholder="nhập lớp sinh viên theo học" minlength="4">
+      </br>
     </div>
-<label for="inputEmail3" class="col-sm-2 control-label">Niên Khóa</label>
-    <div class="col-sm-3">
+<label  class="col-xs-12 col-md-3">Niên Khóa</label>
+    <div class="col-xs-12 col-md-9">
       <input type="Number" class="form-control" name="name" id="nienkhoa" placeholder="Nhập niên khóa học của sinh viên" minlength="3">
+   </br>
     </div>
-</br></br></br>
- </div>
-
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Giáo Viên Hướng Dẫn <span class="rq"> *</label>
-    <div class="col-sm-9">
+    <label  class="col-xs-12 col-md-3">Giáo Viên Hướng Dẫn <span class="rq"> *</label>
+    <div class="col-xs-12 col-md-9">
       <input type="text" class="form-control" name="name" id="giaovien" placeholder="Nhập tên GV + học hàm hoặc học vị" minlength="6">
+    </br>
     </div>
-</br></br></br>
-  </div>
 
-
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Lĩnh Vực Nghiên Cứu</label>
-    <div class="col-sm-9">
+    <label class="col-xs-12 col-md-3">Lĩnh Vực Nghiên Cứu</label>
+    <div class="col-xs-12 col-md-9">
      <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1"> Tự Nhiên
 </label>
@@ -124,7 +116,7 @@ $('.carousel').carousel()
 </label>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1"> Kỹ Thuật
-</label></br>
+</label>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1"> Nông Lâm Ngư
 </label>
@@ -134,13 +126,11 @@ $('.carousel').carousel()
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1"> Môi Trường
 </label>
-    </div>
 </br></br>
-  </div>
- 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Loại Hình Cơ Bản</label>
-    <div class="col-sm-9">
+    </div>
+
+    <label class="col-xs-12 col-md-3">Loại Hình Cơ Bản</label>
+    <div class="col-xs-12 col-md-9">
      <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1"> Cơ Bản
 </label>
@@ -150,68 +140,53 @@ $('.carousel').carousel()
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1"> Triển Khai
 </label>
-    </div>
 </br></br>
-  </div>
+    </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Cơ Quan Chủ Trì</label>
-    <div class="col-sm-9">
+    <label  class="col-xs-12 col-md-3">Cơ Quan Chủ Trì</label>
+    <div class="col-xs-12 col-md-9">
       <input type="text" class="form-control" name="name" id="coquan" placeholder="Nhâp tên đơn vị tổ chức NCKH">
+      </br>
     </div>
-</br></br>
-  </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Tình Hình Trong Nước</label>
-    <div class="col-sm-9">
+    <label  class="col-xs-12 col-md-3">Tình Hình Trong Nước</label>
+    <div class="col-xs-12 col-md-9">
       <textarea class="form-control" rows="3" name="name" id="tinhhinhtrongnuoc" placeholder="Nhập các vấn đề liên quan đến đề tài có ở trong nước"></textarea> 
+    </br>
     </div>
-</br></br></br></br>
-  </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-4 control-label">Tình Hình Ngoài Nước</label>
-    <div class="col-sm-8">
+    <label  class="col-xs-12 col-md-3">Tình Hình Ngoài Nước</label>
+    <div class="col-xs-12 col-md-9">
        <textarea class="form-control" rows="3" name="name" id="tinhhinhngoainuoc" placeholder="Nhập các vấn đề liên quan đến đề tài có ở ngoài nước" minlength="20"></textarea> 
+    </br>
     </div>
-</br></br></br></br>
-  </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-4 control-label">Các Công Trình Liên Quan</label>
-    <div class="col-sm-8">
+    <label  class="col-xs-12 col-md-3">Các Công Trình Liên Quan</label>
+    <div class="col-xs-12 col-md-9">
        <textarea class="form-control" rows="3" name="name" id="caccongtrinh" placeholder="Những sản phẩm đã có trên thị trường"></textarea> 
+   </br>
     </div>
-</br></br></br></br>
-  </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-4 control-label">Tính Cấp Thiết</label>
-    <div class="col-sm-8">
+    <label  class="col-xs-12 col-md-3">Tính Cấp Thiết</label>
+    <div class="col-xs-12 col-md-9">
        <textarea class="form-control" rows="3" name="name" id="tinhcapthiet" placeholder="Nhập tính cấp thiết của ứng dụng"></textarea> 
+    </br>
     </div>
-</br></br></br></br>
-  </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-4 control-label">Mục Tiêu Đề Tài</label>
-    <div class="col-sm-8">
+    <label class="col-xs-12 col-md-3">Mục Tiêu Đề Tài</label>
+    <div class="col-xs-12 col-md-9">
        <textarea class="form-control" name="name" id="muctieu" rows="3" placeholder="Mục Tiêu Đề Tài"  minlength="6"></textarea> 
+    </br>
     </div>
-</br></br></br></br>
-  </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-4 control-label">Phương Pháp Nghiên Cứu</label>
-    <div class="col-sm-8">
+    <label  class="col-xs-12 col-md-3">Phương Pháp Nghiên Cứu</label>
+    <div class="col-xs-12 col-md-9">
        <textarea class="form-control" rows="3" name="name" id="phuongphap" placeholder="Nhập Phương Pháp Nghiên Cứu"  minlength="6"></textarea> 
+    </br>
     </div>
-</br></br></br></br>
-  </div>
 
-<div class="form-group"  style="margin-left:20px;margin-right:10px;">
-    <label for="exampleInputEmail1">Nôi Dung Nghiên Cứu Và Tiến Độ Thực Hiện</label>
+    <label class="col-xs-12 col-md-12">Nôi Dung Nghiên Cứu Và Tiến Độ Thực Hiện</label>
+    <div class="col-xs-12 col-md-12">
     <table class="table table-bordered">
  <tr><th>Stt</th><th>Nội dung công việc</th> <th>Sản phẩm phải đạt</th><th>Thơi Gian</th><th>Người Thực Hiện</th> </tr>
 <tr>
@@ -227,13 +202,15 @@ $('.carousel').carousel()
 <th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập sản phẩm phải đạt"></th>
 <th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập thời gian( số tháng)"></th>
 <th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập người thực hiện"></th>
-</tr> <button type="add" class="btn btn-default">Thêm Công Việc</button>
+</tr> 
+<tr>
+<button type="add" class="btn btn-default">Thêm Công Việc</button>
+</tr>
   </table>
-  </div>
-
-<div class="form-group" >
-    <label for="inputEmail3" class="col-sm-2 control-label">Loại Sản Phẩm</label>
-    <div class="col-sm-10">
+</br>
+</div>
+    <label class="col-xs-12 col-md-3">Loại Sản Phẩm</label>
+    <div class="col-xs-12 col-md-9">
      <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1"> Mẫu
 </label>
@@ -245,7 +222,7 @@ $('.carousel').carousel()
 </label>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1"> Phương Pháp
-</label></br></br>
+</label>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1"> Giống Cây
 </label>
@@ -258,7 +235,7 @@ $('.carousel').carousel()
 </label>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1"> Báo Cáo Phân Tích
-</label></br></br>
+</label>
 </label>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1">Tiêu Chuẩn
@@ -274,7 +251,7 @@ $('.carousel').carousel()
 </label>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1">Chương Trình Máy Tính
-</label></br></br>
+</label>
 </label>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1">Tư Liệu Dự Báo
@@ -290,7 +267,7 @@ $('.carousel').carousel()
 </label>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1">Bản Kiến Nghị
-</label></br></br>
+</label>
 </label>
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1">Sản Phâm Khác
@@ -299,11 +276,10 @@ $('.carousel').carousel()
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1">Dây Chuyền Công Nghệ
 </label>
+</br></br>
     </div>
-  </div>
-</br>
-<div class="form-group" style="margin-left:20px;margin-right:10px;">
-    <label for="exampleInputEmail1">Tên Sản Phẩm, Số Lượng Và Yêu Cầu Khoa Học Đối Với Sản Phẩm</label></br>
+
+    <label class="col-xs-12 col-md-12">Tên Sản Phẩm, Số Lượng Và Yêu Cầu Khoa Học Đối Với Sản Phẩm</label></br>
     <table class="table table-bordered">
  <tr><th>Stt</th><th>Tên sản phẩm</th> <th>Số lượng</th><th>Yêu cầu khoa học</th> </tr>
 <tr>
@@ -319,20 +295,18 @@ $('.carousel').carousel()
 <th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập yêu cầu khoa học"></th>
 </tr><button type="add" class="btn btn-default">Thêm sản phẩm</button>
   </table>
-  </div>
 
-<div class="form-group">
-    <label for="inputEmail3" class="col-sm-4 control-label">Địa Chỉ ứng Dụng</label>
-    <div class="col-sm-8">
+    <label class="col-xs-12 col-md-3">Địa Chỉ ứng Dụng</label>
+    <div class="col-xs-12 col-md-9">
       <input type="text" class="form-control" name="address"  id="diachiungdung" placeholder="nhập địa chỉ ứng dụng của sản phẩm">
+   </br>
     </div>
-</div>
-</br></br>
-<div class="form-group" style="margin-left:20px;margin-right:10px;">
- <label for="inputEmail3" class="col-sm-4 control-label">Kinh Phí Dự Trù</label>
-    <div class="col-sm-8">
+
+ <label class="col-xs-12 col-md-3">Kinh Phí Dự Trù</label>
+    <div class="col-xs-12 col-md-9">
       <input type="number" class="form-control" name="name" id="dutrukinhphi">
-    </div></br>
+      </br>
+    </div>
     <table class="table table-bordered">
  <tr><th>Stt</th><th>Công việc</th> <th>Thành tiền</th><th>Ghi chú</th> </tr>
 <tr>
@@ -348,24 +322,20 @@ $('.carousel').carousel()
 <th> <input type="text" class="form-control" id="inputEmail3" placeholder="Nhập ghi chú "></th>
 </tr><button type="add" class="btn btn-default">Thêm kinh phí</button>
   </table>
-  </div>
-   <div class="form-group" style="margin-left:20px;">
-    <label for="exampleInputFile">File đính kèm</label>
+
+    <label class="col-xs-12 col-md-12">File đính kèm</label>
     <input type="file" id="exampleInputFile">
     <p class="help-block">load các file báo cáo đính kém</p></br>
-    </div>
-<div class="form-group">
-								<div class="col-sm-5">
+								<div class="col-xs-12 col-md-12">
 									<div class="checkbox">
 										<label>
 											<input type="checkbox" id="agree" name="agree" value="agree" required/>Tôi đã đồng ý cập nhật
 										</label>
 									</div>
 								</div>
-							</div>
+						
 </label>
 </br></br>
-<div style="margin-left:500px;margin-right:10px" class="form-group">
         <button type="button" class="btn btn-default" data-dismiss="modal">Trở Về</button>
         <button  type="submit"  class="btn btn-primary" name="signup" value="Đăng ký" onclick="javascript:void(alert('Thành Công!!!'))">Cập nhật</button>
       </div>

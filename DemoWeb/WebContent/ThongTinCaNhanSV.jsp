@@ -7,7 +7,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Quản Lý Đề Tài Nghiên Cứu Khoa Học</title><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quản Lý Đề Tài Nghiên Cứu Khoa Học</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" type="text/css" href="ThuVien/css/Main.css"/>
   <link rel="stylesheet" type="text/css" href="ThuVien/css/bootstrap.css"/>
     <script src="ThuVien/Jquery/jquery-1.11.3.min.js"></script>
@@ -57,22 +58,21 @@ String ChiNhanh=TT.getChiNhanh();
 %>
 
 
-   <div id="Center_Div" class="Center_Div"> 
           <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Thông Tin Sinh Viên</strong></div>
     </div>
     </div>
-  <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
+  <form style=" border: groove;width:100%;">	
 <form class="form-inline" role="form" >
 </br></br>
 <div class="form-group">
-    <label for="inputText" class="col-sm-2 control-label">Họ Và Tên</label>
-    <div class="col-sm-4">
+    <label for="inputText" class="col-xs-12 col-sm-2  control-label">Họ Và Tên</label>
+    <div class="col-sx-12 col-sm-4">
 <%=HoVaTen %>
     </div>
-<label for="inputText" class="col-sm-2 control-label">Mã Số</label>
-    <div class="col-sm-4">
+<label for="inputText" class="col-xs-12 col-sm-2  control-label">Mã Số</label>
+    <div class="col-sx-12 col-sm-4">
  <%=MaSo %>
     </div>
 </br></br>
@@ -158,8 +158,7 @@ String ChiNhanh=TT.getChiNhanh();
     <div class="modal-content">
     
 
-<div id="Center_Div"> 
-           <h2 id="ThongTinCaNhan" style="clear:right; margin-left:20px;color:#009;"> Cập Nhật Thông Tin Cá Nhân </h2>
+           <h2 id="ThongTinCaNhan" style="clear:right; margin-left:5%;color:#009;"> Cập Nhật Thông Tin Cá Nhân </h2>
 
 <form id="signupForm1" method="post" class="form-horizontal" action="">
 </br></br>
@@ -173,7 +172,7 @@ String ChiNhanh=TT.getChiNhanh();
     <div class="col-sm-4">
       <input type="number" class="form-control" name="number" id="maso" value="<%=MaSo %>"  minlength="8">
     </div>
-</br></br>
+</br>
   </div>
 
 <div class="form-group" style="margin-left:10px;margin-right:10px">
@@ -185,7 +184,7 @@ String ChiNhanh=TT.getChiNhanh();
     <div class="col-sm-4">
       <input type="number" class="form-control" name="number" id="sdt" placeholder="Nhập số điện thoại..."  minlength="9">
     </div>
-</br></br>
+</br>
   </div>
 
 <div class="form-group" style="margin-left:10px;margin-right:10px">
@@ -197,7 +196,7 @@ String ChiNhanh=TT.getChiNhanh();
     <div class="col-sm-4">
       <input type="text" class="form-control" name="name" id="lop" placeholder="Nhập lớp.." minlength="2">
     </div>
-</br></br>
+</br>
   </div>
 
 <div class="form-group" style="margin-left:10px;margin-right:10px">
@@ -209,7 +208,7 @@ String ChiNhanh=TT.getChiNhanh();
     <div class="col-sm-4">
       <input type="number" class="form-control" id="inputText" name="number " id="nienkhoa" placeholder="Nhập niên khóa..">
     </div>
-</br></br>
+</br>
   </div>
 
 <div class="form-group" style="margin-left:10px;margin-right:10px">
@@ -225,7 +224,7 @@ String ChiNhanh=TT.getChiNhanh();
 <label class="checkbox-inline">
   <input type="radio"  name="optionsRadios" id="nu" value="option2"> Nữ
     </div>
-</br></br>
+</br>
   </div>
 
 <div class="form-group" style="margin-left:10px;margin-right:10px">
@@ -237,7 +236,7 @@ String ChiNhanh=TT.getChiNhanh();
     <div class="col-sm-4">
       <input type="text" class="form-control" name="name" id="diachi" placeholder="Nhập địa chỉ thường trú."  minlength="9">
     </div>
-</br></br>
+</br>
   </div>
 
 <div class="form-group" style="margin-left:10px;margin-right:10px">
@@ -249,7 +248,7 @@ String ChiNhanh=TT.getChiNhanh();
     <div class="col-sm-4">
       <input type="text" class="form-control" name="name" id="chinhanhnh" placeholder="Nhập chi nhánh ngân hàng.." minlength="9">
     </div>
-</br></br>
+</br>
   </div>
  <div class="form-group">
 								<div class="col-sm-5">
@@ -261,11 +260,11 @@ String ChiNhanh=TT.getChiNhanh();
 								</div>
 							</div>
 </label>
-</br></br>
-<div style="margin-left:500px;margin-right:10px" class="form-group">
+</br>
+
         <button type="button" class="btn btn-default" data-dismiss="modal">Trở Về</button>
         <button  type="submit"  class="btn btn-primary" name="signup" value="Đăng ký" onclick="javascript:void(alert('Thành Công!!!'))">Cập nhật</button>
-      </div>
+     
 </form>
 </br>
            </form>   

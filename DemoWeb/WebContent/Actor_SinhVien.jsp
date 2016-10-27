@@ -9,9 +9,12 @@
 	Nghiên Cứu Khoa Học Trường Đại Học Sư Phạm Kỹ Thuật
 </title><meta name="Keywords" content="UTE Portal :: HCMC University of Technology and Education, Đại học Sư phạm Kỹ thuật" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta name="description" content="">
+    <meta name="author" content="">
+    
  <link rel="stylesheet" type="text/css" href="ThuVien/css/Main.css"/>
   <link rel="stylesheet" type="text/css" href="ThuVien/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="ThuVien/css/sb-admin.css"/>
     <script src="ThuVien/Jquery/jquery-1.11.3.min.js"></script>
      <script src="ThuVien/Js/bootstrap.min.js"></script>
     <script src="ThuVien/Jquery/jquery.bootstrap-autohidingnavbar.js"></script>
@@ -28,14 +31,14 @@
 			var url,data;
 			url = "ThongBaoSV.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 		$("#thongtincanhan").click(function(e) {
 			//=======.load(url)================
 			var url,data;
 			
 			url = "ThongTinCaNhanSV.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			
         });
 		
@@ -45,7 +48,7 @@
 			
 			url = "TrangThaiDeTai.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			
         });
 		$("#diemdanhgia").click(function(e) {
@@ -54,7 +57,7 @@
 			
 			url = "DiemDanhGia.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			
         });
 		
@@ -64,7 +67,7 @@
 			
 			url = "DangKyDeTai.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			
         });
 		
@@ -74,7 +77,7 @@
 			
 			url = "XemMaDeTai.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			
         });
 		
@@ -84,7 +87,7 @@
 			
 			url = "GiaHanDeTai.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			
         });
 		
@@ -94,7 +97,7 @@
 			
 			url = "HuyDeTai.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			
         });
 		
@@ -104,7 +107,7 @@
 			
 			url = "NopBaoCao.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			
         });
 		
@@ -114,7 +117,16 @@
 			
 			url = "ThongBaoSV.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
+			
+        });
+		$("#dangxuat").click(function(e) {
+			//=======.load(url)================
+			var url,data;
+			
+			url = "home";
+			//url = "files/file-001.php";
+			$("#load").load(url);
 			
         });
 		$("#tb1").click(function(e) {
@@ -123,7 +135,7 @@
 			
 			url = "https://docs.google.com/document/d/1n-fIkgIOj5rDOyNpMSXukG-ctDBBrXS7EgAxns69B14/pub?embedded=true";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			
         });
 		$("#tb2").click(function(e) {
@@ -132,7 +144,7 @@
 			
 			url = "https://docs.google.com/document/d/1vsQ4dDQmYugAS__lkApEHB7tLfI75jGpkhOxCewGTzM/pub?embedded=true";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			
         });
 	});
@@ -146,7 +158,6 @@
         </style>
 </head>
 <body>
-
 <%
 User user =(User) session.getAttribute("user");
 if(user==null)
@@ -156,115 +167,54 @@ if(user==null)
 }
 %>
 
+<div class="col-xs-12 col-sm-12 ">
 
-<div class="row">
-  <div class="col-xs-6 col-md-12 ">
-	<table align="center" border="0" width="1002" id="table1" cellspacing="0" cellpadding="0">
-		<tr>
-			<td height="24">&nbsp;</td>
-		</tr>
-		<tr>
-			<td>
-			 <a  href="http://hcmute.edu.vn/"><img  src="ThuVien/Images/SPKT.jpg" /></a>
-			</td>
-		</tr>
-		</table>
-</div>
-<div class="col-xs-12 col-md-12 ">
-						<table border="0" height="40" width="100%" id="table5" cellspacing="0" cellpadding="0">
-						<td>
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container">
+	<div class="page-header no-margin no-padding">
+	<div class="container" >
+	 <a  href="http://hcmute.edu.vn/">
+	 <img src="ThuVien/Images/banner.jpg" class="img-responsive" /></a>
+ <img src="ThuVien/Images/line_ngang.jpg" class="img-responsive" /></a>
+	</div>
+	</div>
+	</div>
+
+<div id="Main">
+<div class="container">
+<div class="col-xs-12 col-md-3 ">	
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
 <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">    
+       <span class="icon-bar"></span> 
+       <span class="icon-bar"></span> 
+       <span class="icon-bar"></span> 
+       </button>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Trang Chủ</a></li>
-        <li><a href="#"> <span class="glyphicon glyphicon-user"></span> Trang Cá nhân</a></li>
+<ul class="nav navbar-left nav-tabs">
+        <li> <a class="menu" id="thongbao"> <span class="glyphicon glyphicon-list-alt" ></span>  Thông Báo  </a></li>
+        <li> <a class="menu" id="thongtincanhan"> <span class="glyphicon glyphicon-user"></span>  Thông tin cá nhân</a></li>
+        <li> <a class="menu" id="trangthaidetai"> <span class="glyphicon glyphicon-tasks"></span>  Trạng Thái Đề Tài</a></li>
+ 		 <li><a class="menu" id="diemdanhgia"> <span class="glyphicon glyphicon-briefcase"></span>  Điểm Đánh Giá nghiệm Thu</a></li>
+       <li>  <a class="menu" id="dangkydetai"> <span class="glyphicon glyphicon-hand-up"></span>  Đăng Ký Đề Tài</a></li>
+     <li> <a class="menu" id="xemmadetai"> <span class="glyphicon glyphicon-sound-5-1"></span>  Xem Mã Số Đề Tài</a></li>
+     <li><a class="menu" id="giahandetai"> <span class="glyphicon glyphicon-asterisk"></span>  Gia Hạn Đề Tài</a></li>
+     <li><a class="menu" id="huydetai"> <span class="glyphicon glyphicon-flag"></span>  Hủy Đề Tài</a></li>
+     <li> <a class="menu" id="nopbaocao"> <span class="glyphicon glyphicon-floppy-open"></span>  Nộp Báo Cáo</a></li>
+     <li> <a class="menu" href="home"> <span class="glyphicon glyphicon-eject"></span>  Đăng Xuất</a></li>
       </ul>
       
-      <ul class="nav navbar-nav navbar-right">
-       <li> <a href="home" >Đăng Xuất</a></li>
-      </ul>
       
 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-</td>
-								</table>
-
-</div>	
-<div class="col-xs-6 col-md-12 ">	
-<div id="Main">
-<div id="Left_Div">
-<table border="0" width="100%" height="100%"  id="table28" cellspacing="0" cellpadding="0">
-
-                                        <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="thongbao"> <span class="glyphicon glyphicon-list-alt"></span>  Thông Báo</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="thongtincanhan"> <span class="glyphicon glyphicon-user"></span>  Thông tin cá nhân</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="trangthaidetai"> <span class="glyphicon glyphicon-tasks"></span>  Trạng Thái Đề Tài</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="diemdanhgia"> <span class="glyphicon glyphicon-briefcase"></span>  Điểm Đánh Giá nghiệm Thu</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="dangkydetai"> <span class="glyphicon glyphicon-hand-up"></span>  Đăng Ký Đề Tài</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="xemmadetai"> <span class="glyphicon glyphicon-sound-5-1"></span>  Xem Mã Số Đề Tài</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="giahandetai"> <span class="glyphicon glyphicon-asterisk"></span>  Gia Hạn Đề Tài</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="huydetai"> <span class="glyphicon glyphicon-flag"></span>  Hủy Đề Tài</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="nopbaocao"> <span class="glyphicon glyphicon-floppy-open"></span>  Nộp Báo Cáo</a>
-                                            </td>
-                                        </tr>
-                                          
-               
-                                    </table>   
+</div>
+<div class="col-xs-12 col-md-9">
+<div id="load">
 
 </div>
-
-<div id="Center_Div">
-
-
-
+</div>
 </div>
 
 <footer class="site-footer">

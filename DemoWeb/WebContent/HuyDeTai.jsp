@@ -34,138 +34,120 @@ $('.carousel').carousel()
         </style>
 </head>
 <body>
-   <div id="Center_Div" class="Center_Div"> 
-          <div class="panel-group" align="center">
+  <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Hủy Đề Tài</strong></div>
     </div>
     </div>
     
     <form id="signupForm1" class="form-horizontal">
-  <div class="form-group"  style="margin-left:20px;margin-right:20px;">
-    <label for="exampleInputEmail1">Tên Đề Tài</label>
-    <textarea class="form-control" rows="3"  name="name" id="tendetai" placeholder="nhập tên đề tài" minlength="20" required></textarea>
+  <div class="form-control-group" style="margin-left:1%;">
+    <label class="col-xs-12 col-md-12  ">Tên Đề Tài <span class="rq"> * </span></label>
+     <div class="col-xs-12 col-md-12 ">
+    <textarea type="text" class="form-control" rows="2" name="name" id="tendetai" minlength="20" placeholder="nhập tên đề tài"  required></textarea>
+    <p class="help-block">Nhập theo tên đã đăng ký</p>
   </div>
-<form class="form-inline" role="form"   style="margin-left:20px;" >
-  <div class="form-group "  style="margin-left:20px;margin-right:20px;">
-    <label for="exampleInputEmail1">Mã Đề Tài</label>
-<input type="text" class="form-control" name="name" id="madetai" placeholder="Nhập mã đề tài" minlength="3" required>
-<div class="container">
+     <label class="col-xs-12 col-md-3  " >Mã Đề Tài<span class="rq"> *</label>
+    <div class="col-xs-12 col-md-6">
+     <input type="text"  class="form-control" name="name" id="madetai" placeholder="Nhập nhập mã đề tài"  minlength="6">
+    </div>
+    <div class="col-xs-12 col-md-3">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Kiểm Tra Mã Đề Tài</button>
   <div id="demo" class="collapse">
     <h style="color:red">Mã đề tài của bạn là CT102</h>
   </div>
+     </br></br></br>
 </div>
-  </div>
 
-<div class="form-group "  style="margin-left:20px;">
-    <label for="inputEmail3" class="col-sm-2 control-label">Chủ Nhiệm</label>
-    <div class="col-sm-4">
+    <label  class="col-xs-12 col-md-3  ">Chủ Nhiệm</label>
+    <div class="col-xs-12 col-md-9  "">
       <input type="text" class="form-control"name="name" id="chunhiem" placeholder="nhập tên chủ nhiệm" minlength="8" required>
+    </br>
     </div>
-<label for="inputEmail3" class="col-sm-2 control-label">Ngày Sinh</label>
-    <div class="col-sm-4">
+<label class="col-xs-12 col-md-3  ">Ngày Sinh</label>
+    <div class="col-xs-12 col-md-9  ">
       <input type="date" class="form-control"name="date" id="ngaysinh">
+      </br>
     </div>
-</br></br>
-  </div>
 
-<div class="form-group"  style="margin-left:20px;">
-    <label for="inputEmail3" class="col-sm-2 control-label">Đơn Vị</label>
-    <div class="col-sm-4">
+    <label class="col-xs-12 col-md-3  ">Đơn Vị</label>
+    <div  class="col-xs-12 col-md-9  ">
       <input type="text" class="form-control" name="name" id="donvi" minlength="6" placeholder="Nhập khoa, ban, phòng công tác">
+   </br>
     </div>
-<label for="inputEmail3" class="col-sm-2 control-label">SĐT</label>
-    <div class="col-sm-4">
+<label  class="col-xs-12 col-md-3  ">SĐT</label>
+    <div  class="col-xs-12 col-md-9  ">
       <input type="number" class="form-control" name="number" id="sdt" minlength="10" placeholder="Nhập số điện thoại" required>
+    </br>
     </div>
-</br></br>
-  </div>
 
-<div class="form-group "  style="margin-left:20px;">
-    <label for="inputEmail3" class="col-sm-2 control-label">Ngày Bắt Đầu</label>
-    <div class="col-sm-4">
+
+    <label  class="col-xs-12 col-md-3  ">Ngày Bắt Đầu</label>
+    <div class="col-xs-12 col-md-9  ">
       <input type="date" class="form-control" name="date" id="ngaybatdau">
+      </br>
     </div>
-<label for="inputEmail2" class="col-sm-2 control-label">Ngày Kết Thúc</label>
-    <div class="col-sm-4">
+<label  class="col-xs-12 col-md-3  ">Ngày Kết Thúc</label>
+    <div  class="col-xs-12 col-md-9  ">
       <input type="date" class="form-control" name="date" id="ngayketthuc">
+      </br>
     </div>
-</br></br>
-  </div>
-
-<div class="form-group"  style="margin-left:20px;">
-    <label for="inputEmail3" class="col-sm-2 control-label">Lớp</label>
-    <div class="col-sm-4">
+    <label  class="col-xs-12 col-md-3  ">Lớp</label>
+    <div  class="col-xs-12 col-md-9  ">
       <input type="text" class="form-control" name="name" minlength="6" id="lop" placeholder="nhập lớp sinh viên theo học">
-
+</br>
     </div>
-<label for="inputEmail3" class="col-sm-2 control-label">Niên Khóa</label>
-    <div class="col-sm-4">
+<label  class="col-xs-12 col-md-3  ">Niên Khóa</label>
+    <div  class="col-xs-12 col-md-9 ">
       <input type="number" class="form-control" name="number" id="nien khoa"  minlength="6" placeholder="Nhập niên khóa học của sinh viên">
-
+    </br>
     </div>
-</br></br>
- </div>
 
-<div class="form-group "  style="margin-left:20px;">
-    <label for="inputEmail3" class="col-sm-3 control-label">Giáo Viên Hướng Dẫn</label>
-    <div class="col-sm-9">
+    <label class="col-xs-12 col-md-3  ">Giáo Viên Hướng Dẫn</label>
+    <div  class="col-xs-12 col-md-9  ">
       <input type="text" class="form-control" name="name" id="giaovien" minlength="6" placeholder="Nhập tên GV + học hàm hoặc học vị">
-
+<br>
     </div>
-</br></br>
-  </div>
 
-<div class="form-group "  style="margin-left:20px;"> 
- <label for="inputEmail3" class="col-sm-3 control-label">Kinh Phí Dự Án</label>
-    <div class="col-sm-9">
+ <label  class="col-xs-12 col-md-3  ">Kinh Phí Dự Án</label>
+    <div  class="col-xs-12 col-md-9  ">
       <input type="number" class="form-control" name="number"  id="kinhphi" placeholder="Nhập kính phí theo hợp đồng" required>
-    </div></br></br>
-</div>
-
-<div class="form-group"  style="margin-left:20px;">
-    <label for="inputEmail3" class="col-sm-2 control-label">Kinh Phí Tạm ứng </label>
-    <div class="col-sm-4">
+    </br>
+    </div>
+    <label  class="col-xs-12 col-md-3  ">Kinh Phí Tạm ứng </label>
+    <div  class="col-xs-12 col-md-9  ">
       <input type="number" class="form-control" name="number" id="kinhphiung" placeholder="Nhập tạm ứng" required>
+      </br>
     </div>
-<label for="inputEmail2" class="col-sm-2 control-label">Vào Ngày</label>
-    <div class="col-sm-4">
+<label  class="col-xs-12 col-md-3  ">Vào Ngày</label>
+    <div  class="col-xs-12 col-md-9 ">
       <input type="date" class="form-control" name="date" id="vaonhay" >
+      </br>
     </div>
-</br></br>
+    <label  class="col-xs-12 col-md-12  ">Tôi xin hủy đề tài và nộp lại số tiền tạm ứng cho phòng kế hoạch - tài chính trước ngày: </label>
+    <div  class="col-xs-12 col-md-12  ">
+       <input type="date" class="form-control" name="date" id="ngaytralai">
+      </br>
+    </div>
+    <label  class="col-xs-12 col-md-3  ">Lý Do</label>
+    <div  class="col-xs-12 col-md-3  "></div>
+    <textarea class="form-control" name="name" id="lydo" rows="5"placeholder="Nhập lý do gia hạn đề tài"></textarea>
+    </br>
   </div>
 
-<form class="form-group"  style="margin-left:20px;">
-  <div class="form-group "  style="margin-left:20px;margin-right:20px;">
-    <label for="exampleInputEmail1">Tôi xin hủy đề tài và nộp lại số tiền tạm ứng cho phòng kế hoạch - tài chính trước ngày:</label>
-        <input type="date" class="form-control" name="date" id="ngay">
-  </div>
-
-
-<form class="form-inline" role="form"  style="margin-left:20px;margin-right:20px;"> 
-  <div class="form-group "  style="margin-left:20px;">
-    <label for="exampleInputEmail1">Lý Do</label>
-    <textarea class="form-control" rows="5"placeholder="Nhập lý do hủy  đề tài"></textarea>
-  </div>
-
-<div class="form-group">
-								<div class="col-sm-5">
+								<div  class="col-xs-12 col-md-12  ">
 									<div class="checkbox">
 										<label>
 											<input type="checkbox" id="agree" name="agree" value="agree" required/>Tôi đã đồng ý cập nhật
 										</label>
 									</div>
-								</div>
-							</div>
-</label>
-</br></br>
-<div style="margin-left:500px;margin-right:10px" class="form-group">
+									</br>
+								</div>	
+<div  class="col-xs-12 col-md-4 col-md-offset-8 ">
         <button type="button" class="btn btn-default" data-dismiss="modal">Trở Về</button>
         <button  type="submit"  class="btn btn-primary" name="signup" value="Đăng ký" onclick="javascript:void(alert('Thành Công!!!'))">Cập nhật</button>
       </div>
-</form>
-           </form>   
-    
+      </div>
+</form>    
 </body>
 </html>

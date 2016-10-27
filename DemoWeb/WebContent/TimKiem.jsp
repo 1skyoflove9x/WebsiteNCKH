@@ -28,7 +28,7 @@ $(document).ready(function(){
 		
 		url = "https://docs.google.com/document/d/15-zwTehY0-D3mKTVEkqpwWRb25kWzZ0b-5M1UkMfW7k/pub?embedded=true";
 		//url = "files/file-001.php";
-		$("#Center_Div").load(url);
+		$("#load").load(url);
 		
 	});
 	  $('#loaddata').DataTable({  
@@ -149,13 +149,13 @@ select.change(function()
 </head>
 
 <body>
-   <div id="Center_Div" class="Center_Div"> 
+   <div id="load" > 
           <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Tìm Kiếm</strong></div>
     </div>
     </div>
-<form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
+<form style=" border: groove;width:100; margin-left:1%; margin-right:1%;">	
  </br>
  <strong style="margin-left:10px;color: red ">Tên Đề Tài:  </strong>
     <select id="tendetaiSelect" style="width:200px"></select>
@@ -172,7 +172,7 @@ select.change(function()
   </div>
     </br>
 
- <form style=" border: groove;width:700px; height:700px;margin-left:15px; margin-right:15px;">	
+ <form style=" border: groove;width:100%; height:100%;margin-left:1%; margin-right:1%;">	
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -192,7 +192,6 @@ select.change(function()
                
           </div>
          
-          <div class="container" style=" width:700px; height:700px;margin-left:5px; margin-right:50px;margin-bottom:35px;">  
                 <table id="loaddata" class="table table-bordered">  
                      <thead>  
                           <tr>  
@@ -203,8 +202,7 @@ select.change(function()
                                <th width="10%">Giáo Viên Hướng Dẫn</th> 
                           </tr>  
                      </thead>  
-                </table>  
-           </div>  
+                </table>   
             </form>
 </form>   
 </body>

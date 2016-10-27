@@ -35,63 +35,55 @@ $('.carousel').carousel()
 </head>
 
 <body>
-   <div id="Center_Div" class="Center_Div"> 
           <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Nộp Báo Cáo</strong></div>
     </div>
     </div>
     
-    <form style=" border: groove; margin-left:15px; margin-right:15px;">	
+    <form style=" border: groove; width:98%;margin-left:1%; margin-right:1%">	
 </br>
-<div class="col-sm-2">
-<strong> Họ Và Tên:</strong>
+  <div class="form-control-group" style="margin-left:1%;">
+<div class="col-xs-12 col-md-6 ">
+<strong> Họ Và Tên:Nguyễn Quốc Trường</strong>
     </div>
-<div class="col-sm-5">
-Nguyễn Quốc Trường
+    </br></br>
+<div class="col-xs-12 col-md-6 ">
+<strong>Mã Số:14110425</strong>
     </div>
-<div class="col-sm-2">
-<strong>Mã Số</strong>
+    </br></br>
+<div class="col-xs-12 col-md-6 ">
+<strong> Khoa:Đào tạo chất lượng cao</strong>
     </div>
-<div class="col-sm-3">
-14110425
-    </div></br></br>
-
-<div class="col-sm-2">
-<strong> Khoa:</strong>
+	</br></br>
+<div class="col-xs-12 col-md-6 ">
+<strong>Lớp:14110CL1</strong>
     </div>
-<div class="col-sm-5">
-Đào tạo chất lượng cao
+    </br></br>
+<div class="col-xs-12 col-md-12 ">
+<strong> Tên Đề Tài:Ứng dụng định vị GPS và sim 900A để hỗ trợ người tham gia giao thông ở Tp. Hồ Chí Minh</strong>
     </div>
-<div class="col-sm-2">
-<strong>Lớp</strong>
-    </div>
-<div class="col-sm-3">
-14110CL1
-    </div></br></br>
-<div class="col-sm-2">
-<strong> Tên Đề Tài:</strong>
-    </div>
-<div class="col-sm-10">
-Ứng dụng định vị GPS và sim 900A để hỗ trợ người tham gia giao thông ở Tp. Hồ Chí Minh
-    </div></br></br>
- 
- <div class="form-group">
-    <label for="exampleInputFile">File báo cáo</label>
+    </br></br></br>
+    <label class="col-xs-12 col-md-12">File báo cáo</label>
+    </br>
+    <div class="col-xs-12 col-md-12">
     <input type="file" id="exampleInputFile">
     <p class="help-block">load các file báo cáo đính kém</p>
-
+	</div>
+	</br></br></br>
+	<div class="col-xs-12 col-md-12">
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1">Tôi đồng ý  nộp báo cáo đề tài
 </label>
-</br>
+</br></br>
   </div>
-
-</form>
-           </form>   
-<button type="submit  " class="btn btn-default" onclick="javascript:void(alert('Thành Công!!!'))">Gửi</button>
+  <div  class="col-xs-12 col-md-4 col-md-offset-8 ">
+<button type="submit  " class="btn btn-primary" onclick="javascript:void(alert('Thành Công!!!'))">Gửi</button>
 	<button type="back" class="btn btn-default" >Trở Lại</button>  
-    
+    </div> 
+    </br> 
+    </div>
+    </form>
     
 </body>
 </html>

@@ -1,4 +1,4 @@
-<%@ page import="connectdatabase.User" %>
+  <%@ page import="connectdatabase.User" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -36,7 +36,7 @@ $('.carousel').carousel()
 </head>
 
 <body>
-   <div id="Center_Div" class="Center_Div"> 
+
           <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Xem Đánh Giá</strong></div>
@@ -45,10 +45,11 @@ $('.carousel').carousel()
 
 
 <div class="form-group">
-    <div class="col-sm-2">
+    <div class="col-xs-12 col-md-2 ">
 <h><strong>Tìm Theo</strong></h>
+</br>
     </div>
-    <div class="col-sm-4">
+    <div class="col-xs-12 col-md-4">
      <select class="form-control">
   <option>Mã Đề Tài </option>
   <option>Tên Đề Tài</option>
@@ -57,7 +58,7 @@ $('.carousel').carousel()
   <option>Đơn Vị</option>
 </select>
   </div>
-<div class="col-sm-6">
+<div class="col-xs-12 col-md-6">
   <div class="input-group">
       <input type="text" class="form-control" placeholder="nhập đề tài muốn tìm...">
       <span class="input-group-btn">
@@ -70,7 +71,7 @@ $('.carousel').carousel()
 
  
           <div class="table-responsive">
-            <table class="table table-striped">
+          	<table class="table table-bordered" style="margin-top:15px;" border =1 style ="cellspacing=10; cellpadding=20" align ="center" width = "100%">
               <thead>
                 <tr>
                   <th>Stt</th>

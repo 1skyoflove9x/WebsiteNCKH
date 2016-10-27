@@ -26,7 +26,7 @@ $(document).ready(function(){
 		
 		url = "https://docs.google.com/document/d/15-zwTehY0-D3mKTVEkqpwWRb25kWzZ0b-5M1UkMfW7k/pub?embedded=true";
 		//url = "files/file-001.php";
-		$("#Center_Div").load(url);
+		$("#load").load(url);
 		
 	});
 	});
@@ -40,7 +40,7 @@ $(document).ready(function(){
 </head>
 
 <body>
-   <div id="Center_Div" class="Center_Div"> 
+   <div id="load" > 
           <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Post Thông Báo</strong></div>
@@ -75,15 +75,15 @@ $(document).ready(function(){
     <input type="date" class="form-control" id="inputEmail3" ></br>
 </div>
 <div class="form-group" style="margin-left:10px;margin-right:10px">
-    <label for="inputEmail3" class="col-sm-2 control-label">
+    <label for="inputEmail3" class="col-xs-12 col-md-2">
 <label class="radio-inline">
   <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Gửi Tất Cả
 </label>
 </label>
-    <div class="col-sm-3">
+    <div class="col-xs-12 col-md-3">
     </div>
-<label for="inputEmail3" class="col-sm-2 control-label">Gửi Nhóm</label>
-    <div class="col-sm-5">
+<label for="inputEmail3" class="col-xs-12 col-md-2">Gửi Nhóm</label>
+    <div class="col-xs-12 col-md-5">
       <input type="text" class="form-control" class="checkbox" name="number" id="guinhom"  placeholder="Nhập bất kỳ một tài khoản nào trong hệ thống" minlength="8">
     </div>
 

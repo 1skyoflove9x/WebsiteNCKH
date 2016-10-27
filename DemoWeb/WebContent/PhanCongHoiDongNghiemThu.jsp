@@ -26,7 +26,7 @@ $(document).ready(function(){
 		
 		url = "https://docs.google.com/document/d/15-zwTehY0-D3mKTVEkqpwWRb25kWzZ0b-5M1UkMfW7k/pub?embedded=true";
 		//url = "files/file-001.php";
-		$("#Center_Div").load(url);
+		$("#load").load(url);
 		
 	});
 	});
@@ -40,13 +40,13 @@ $(document).ready(function(){
 </head>
 
 <body>
-   <div id="Center_Div" class="Center_Div"> 
+   <div id="load"> 
           <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Phân Công Hội Đồng Nghiệm Thu</strong></div>
     </div>
     </div>
-<form style=" border: groove;width:700px;margin-left:15px; margin-right:15px;">	
+<form style=" border: groove;width:100%;margin-left:1%; margin-right:1%;">	
 
 
  <div class="table-responsive">

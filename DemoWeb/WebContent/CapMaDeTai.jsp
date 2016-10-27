@@ -26,7 +26,7 @@ $(document).ready(function(){
 		
 		url = "https://docs.google.com/document/d/15-zwTehY0-D3mKTVEkqpwWRb25kWzZ0b-5M1UkMfW7k/pub?embedded=true";
 		//url = "files/file-001.php";
-		$("#Center_Div").load(url);
+		$("#load").load(url);
 		
 	});
 	});
@@ -40,17 +40,17 @@ $(document).ready(function(){
 </head>
 
 <body>
-   <div id="Center_Div" class="Center_Div"> 
+   <div id="load" > 
           <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Cấp Mã Đề Tài</strong></div>
     </div>
     </div>
 <div class="form-group">
-    <div class="col-sm-2">
+    <div class="col-xs-12 col-md-2">
 <h><strong>Tìm Theo</strong></h>
     </div>
-    <div class="col-sm-4">
+    <div class="col-xs-12 col-md-4">
      <select class="form-control">
   <option>Mã Đề Tài </option>
   <option>Tên Đề Tài</option>
@@ -59,7 +59,7 @@ $(document).ready(function(){
   <option>Đơn Vị</option>
 </select>
   </div>
-<div class="col-sm-6">
+<div class="col-xs-12 col-md-6">
   <div class="input-group">
       <input type="text" class="form-control" placeholder="nhập đề tài muốn tìm...">
       <span class="input-group-btn">
@@ -69,7 +69,7 @@ $(document).ready(function(){
 </div>
 </div>
 </br></br>
- <form style=" border: groove;width:700px; height:700px;margin-left:15px; margin-right:15px;">	
+ <form style=" border: groove;width:100%; height:100%;margin-left:1%; margin-right:1%;">	
 
  
           <div class="table-responsive">

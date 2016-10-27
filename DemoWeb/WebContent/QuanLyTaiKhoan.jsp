@@ -56,14 +56,13 @@ $(document).ready(function(){
         </style>
 </head>
 <body>
-<div id="Center_Div">
 
 <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Quản Lý Tài Khoản</strong></div>
     </div>
     </div>
-<form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
+<form style=" border: groove;width:100%; margin-left:1%; margin-right:1%;">	
          
          <div class="form-group">  
        

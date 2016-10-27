@@ -44,14 +44,13 @@ function Save()
         </style>
 </head>
 <body>
-   <div id="Center_Div" class="Center_Div"> 
 <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Trạng Thái Đề Tài</strong></div>
     </div>
     </div>
-    <input type="text" name="button" class="btn btn-primary" value="Đang Chờ Phê Duyệt">
-     <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
+    <input type="button" style="width:30%" class="btn btn-primary" value="Đang Chờ Phê Duyệt"></button>
+     <form style=" border: groove;width:98%; margin-left:1%; margin-right:5%;">	
 </br>
 <ul>
   <strong>CÁC QUY ĐỊNH VỀ TRẠNG THÁI</strong>

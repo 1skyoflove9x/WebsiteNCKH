@@ -63,7 +63,7 @@ $('.carousel').carousel()
     </div>
     
 
-		<table class="table table-bordered" style="margin-top:15px;" border =1 style ="cellspacing=10; cellpadding=20" align ="center" width = "700px;" height = "400px">
+		<table class="table table-bordered" style="margin-top:15px;" border =1 style ="cellspacing=10; cellpadding=20" align ="center" width = "100%">
 				<tr>
 				<th>Tiêu Đề</th>
 				<th>Ngày Gửi</th>

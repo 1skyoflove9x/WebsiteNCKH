@@ -26,9 +26,9 @@ $(document).ready(function(){
               url:"import.php",  
               method:"POST",  
               data:new FormData(this),  
-              contentType:false,          // The content type used when sending data to the server.  
-              cache:false,                // To unable request pages to be cached  
-              processData:false,          // To send DOMDocument or non processed data file it is set to false  
+              contentType:false,        
+              cache:false,              
+              processData:false,        
               success: function(data){  
                    if(data=='Error1')  
                    {  
@@ -53,14 +53,13 @@ $(document).ready(function(){
         </style>
 </head>
 <body>
-<div id="Center_Div">
 
 <div class="panel-group" align="center">
     <div class="panel panel-info">
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Trang Chủ</strong></div>
     </div>
     </div>
-<form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">
+<form style=" border: groove;width:100%; margin-left:1%; margin-right:1%;">
  <br /><br />  
            <div class="container" style="width:650px">   
                 <h2 align="center">Tạo Tài Khoản User</h2>  
@@ -70,10 +69,10 @@ $(document).ready(function(){
                           <br />  
                           <label>Lấy File Từ Máy Tính</label>  
                      </div>  
-                     <div class="col-md-4">  
+                     <div class="col-xs-12 col-md-4">  
                           <input type="file" name="employee_file" style="margin-top:15px;" />  
                      </div>  
-                     <div class="col-md-5">  
+                     <div class="col-xs-12 col-md-5">  
                           <input type="submit" name="upload" id="upload" value="Upload" style="margin-top:10px;" class="btn btn-info" />  
                      </div>  
                      <div style="clear:both"></div>  
@@ -102,7 +101,7 @@ $(document).ready(function(){
                 </div>  
            </div>  
 </form>
- <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">
+ <form style=" border: groove;width:100%; margin-left:1%; margin-right:1%;">
 
           <div class="table-responsive">
             <table class="table table-striped">

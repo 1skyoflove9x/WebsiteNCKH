@@ -33,14 +33,14 @@
 	$(document).ready(function(){
 		url = "TrangChu_NhanVien.jsp";
 		var url,data;
-		$("#Center_Div").load(url);
+		$("#load").load(url);
 		$("#trangchu").click(function(e) {
 			//=======.load(url)================
 			var url,data;
 			
 			url = "TrangChu_NhanVien.jsp";
 			//url = "files/file-001.php";
-			$("#Center_Div").load(url);
+			$("#load").load(url);
 			
         });
 			$("#thongtincanhan").click(function(e) {
@@ -49,7 +49,7 @@
 				
 				url = "ThongTinCaNhanGV_NV.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -60,7 +60,7 @@
 				
 				url = "DeTaiDuocPhanCongPheDuyet.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -70,7 +70,7 @@
 				
 				url = "DeTaiDuocPhanCongPhanBien.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -80,7 +80,7 @@
 				
 				url = "DeTaiDangHuongDan.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -90,7 +90,7 @@
 				
 				url = "DuyetHuyDeTai.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -100,7 +100,7 @@
 				
 				url = "DuyetDangKyDeTai.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 
@@ -110,7 +110,7 @@
 				
 				url = "XemDanhGia.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			$("#trangthaidetai").click(function(e) {
@@ -119,7 +119,7 @@
 				
 				url = "TrangThaiDeTai.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			$("#diemdanhgia").click(function(e) {
@@ -128,7 +128,7 @@
 				
 				url = "DiemDanhGia.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -138,7 +138,7 @@
 				
 				url = "DangKyDeTai.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -147,7 +147,7 @@
 				var url,data;
 				
 				url = "XemMaDeTai.jsp";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -157,7 +157,7 @@
 				
 				url = "GiaHanDeTai.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -167,7 +167,7 @@
 				
 				url = "HuyDeTai.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -177,7 +177,7 @@
 				
 				url = "NopBaoCao.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			
@@ -187,7 +187,7 @@
 				
 				url = "CapMaDeTai.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			$("#timkiem").click(function(e) {
@@ -196,7 +196,7 @@
 				
 				url = "TimKiem.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			$("#thaydoitrangthaidetai").click(function(e) {
@@ -205,7 +205,7 @@
 				
 				url = "ThayDoiTrangThaiDeTai.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			$("#postthongbao").click(function(e) {
@@ -214,7 +214,7 @@
 				
 				url = "PostThongBao.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			$("#phanconghoidongnghiemthu").click(function(e) {
@@ -223,7 +223,7 @@
 				
 				url = "PhanCongHoiDongNghiemThu.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
 			$("#phanconghoidongphanbien").click(function(e) {
@@ -232,17 +232,25 @@
 				
 				url = "PhanCongHoiDongPhanBien.jsp";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 	        });
-			
+			$("#nhapdiemdanhgia").click(function(e) {
+				//=======.load(url)================
+				var url,data;
+				
+				url = "NhapDiemDanhGia.jsp";
+				//url = "files/file-001.php";
+				$("#load").load(url);
+				
+	        });
 			$("#tb1").click(function(e) {
 				//=======.load(url)================
 				var url,data;
 				
 				url = "https://docs.google.com/document/d/15-zwTehY0-D3mKTVEkqpwWRb25kWzZ0b-5M1UkMfW7k/pub?embedded=true";
 				//url = "files/file-001.php";
-				$("#Center_Div").load(url);
+				$("#load").load(url);
 				
 			});
 			
@@ -264,149 +272,77 @@ if(user==null)
 }
 %>
 
-<div class="row">
-  <div class="col-xs-6 col-md-12 ">
-	<table align="center" border="0" width="1002" id="table1" cellspacing="0" cellpadding="0">
-		<tr>
-			<td height="24">&nbsp;</td>
-		</tr>
-		<tr>
-			<td>
-			  <a  href="http://hcmute.edu.vn/"><img  src="ThuVien/Images/SPKT.jpg" /></a>
-			</td>
-		</tr>
-		</table>
+<div class="col-xs-12 col-sm-12 ">
+
+	<div class="page-header no-margin no-padding">
+	<div class="container" >
+	 <a  href="http://hcmute.edu.vn/">
+	 <img src="ThuVien/Images/banner.jpg" class="img-responsive" /></a>
+	 <img src="ThuVien/Images/line_ngang.jpg" class="img-responsive" /></a>
+	</div>
 </div>
-<div class="col-xs-12 col-md-12 ">
-						<table border="0" height="40" width="100%" id="table5" cellspacing="0" cellpadding="0">
-						<td>
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container">
+</div>
+
+<div id="Main">
+<div class="container">
+<div class="col-xs-12 col-md-3 ">	
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
 <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">    
+       <span class="icon-bar"></span> 
+       <span class="icon-bar"></span> 
+       <span class="icon-bar"></span> 
+       </button>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav">
-        <li><a  id="diemdanhgia"><span class="glyphicon glyphicon-briefcase"></span> Điểm Đánh Giá</a></li>
-        <li><a  id="dangkydetai"> <span class="glyphicon glyphicon-hand-up"></span> Đăng Ký Đề Tài</a></li>
-        <li><a  id="trangthaidetai"> <span class="glyphicon glyphicon-tasks"></span> Trạng Thái ĐT</a></li>
-        <li><a  id="xemmadetai"> <span class="glyphicon glyphicon-sound-5-1"></span> Xem Mã Đề Tài</a></li>
+<ul class="nav navbar-left nav-tabs">
+        <li>  <a class="menu" id="trangchu"> <span class="glyphicon glyphicon-list-alt"></span>  Trang Chủ</a></li>
+        <li> <a class="menu" id="thongtincanhan"> <span class="glyphicon glyphicon-user"></span>  Thông tin cá nhân</a></li>
+ 		 <li><a class="menu" id="xemdanhgia"> <span class="glyphicon glyphicon-inbox"></span>  Xem Đánh Giá Đề Tài</a></li>
+       <li>  <a class="menu" id="detaiduocphancongpheduyet"> <span class="glyphicon glyphicon-ok"></span>  Đề Tài Được Phân Công Phê Duyệt</a></li>
+     <li>  <a class="menu" id="detaiduocphancongphanbien"> <span class="glyphicon glyphicon-bullhorn"></span>  Đề Tài Được Phân Công Phản Biện</a></li>
+     <li>   <a class="menu" id="duyethuydetai"> <span class="glyphicon glyphicon-remove"></span> Duyệt Hủy Đề Tài</a></li>
+     <li><a class="menu" id="duyetdangkydetai"> <span class="glyphicon glyphicon-tags"></span>  Duyệt Đăng Ký Đề Tài</a></li>
+      <li> <a class="menu" id="nhapđiemanhgia"> <span class="glyphicon glyphicon-upload"></span>  Nhập Điểm Đánh Giá</a></li>
+     <li> <a class="menu" id="capmadetai"> <span class="glyphicon glyphicon-barcode"></span>  Cấp Mã Đề Tài</a></li>
+     <li> <a class="menu" id="postthongbao"> <span class="glyphicon glyphicon-upload"></span>  Post Thông Báo</a></li>
+     <li>  <a class="menu" id="phanconghoidongnghiemthu"> <span class="glyphicon glyphicon-edit"></span>  Phân Công Hội Đồng Nghiệm Thu</a></li>
+     <li><a class="menu" id="phanconghoidongphanbien"> <span class="glyphicon glyphicon-check"></span>  Phân Công Hội Đồng Phản Biện</a></li>
+     <li> <a class="menu" href="home"> <span class="glyphicon glyphicon-eject"></span>  Đăng Xuất</a></li>
+     <li>  <a class="menu" id="timkiem"> <span class="glyphicon glyphicon-search"></span>  Tìm Kiếm</a></li>
+      </ul>
+      <ul>
+      <div id="menu1">
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" >Đề tài của tôi
+        <span class="caret"></span></a>
+        <ul class="sub-menu">
+           <li><a  id="diemdanhgia"><span class="glyphicon glyphicon-briefcase"></span> Điểm Đánh Giá</a></li>
+            <li><a  id="dangkydetai"> <span class="glyphicon glyphicon-hand-up"></span> Đăng Ký Đề Tài</a></li>
+           <li><a  id="trangthaidetai"> <span class="glyphicon glyphicon-tasks"></span> Trạng Thái ĐT</a></li>
         <li><a 	id="giahandetai"> <span class="glyphicon glyphicon-asterisk"></span> Gia Hạn Đề Tài</a></li>
         <li><a  id="huydetai"> <span class="glyphicon glyphicon-flag"></span> Hủy Đề Tài</a></li>
         <li><a  id="nopbaocao"> <span class="glyphicon glyphicon-floppy-open"></span> Nộp Báo Cáo</a></li>
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-          <li> <a href="home" >Đăng Xuất</a></li>
-      </ul>
-  
-
+         <li><a class="menu" id="thaydoitrangthaidetai"> <span class="glyphicon glyphicon-pencil"></span>  Thay Đổi Trạng Thái Đề Tài</a></li>
+		<li><a class="menu" id="phanconghoidongnghiemthu"> <span class="glyphicon glyphicon-edit"></span>  Phân Công Hội Đồng Nghiệm Thu</a> </li>  
+        <li><a class="menu" id="phanconghoidongphanbien"> <span class="glyphicon glyphicon-check"></span>  Phân Công Hội Đồng Phản Biện</a></li>
+        </ul>
+      </li>
+      </div>
+</ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-</td>
-								</table>
-
-</div>	
-<div class="col-xs-6 col-md-12 ">	
-<div id="Main">
-<div id="Left_Div">
-<table border="0" width="100%" height="100%"  id="table28" cellspacing="0" cellpadding="0">
-
-                                        <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="trangchu"> <span class="glyphicon glyphicon-list-alt"></span>  Trang Chủ</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="thongtincanhan"> <span class="glyphicon glyphicon-user"></span>  Thông tin cá nhân</a>
-                                            </td>
-                                        </tr>
-                  
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="xemdanhgia"> <span class="glyphicon glyphicon-inbox"></span>  Xem Đánh Giá Đề Tài</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="detaiduocphancongpheduyet"> <span class="glyphicon glyphicon-ok"></span>  Đề Tài Được Phân Công Phê Duyệt</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="detaiduocphancongphanbien"> <span class="glyphicon glyphicon-bullhorn"></span>  Đề Tài Được Phân Công Phản Biện</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="detaidanghuongdan"> <span class="glyphicon glyphicon-book"></span>  Đề Tài Đang Hưỡng Dẫn</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="duyethuydetai"> <span class="glyphicon glyphicon-remove"></span> Duyệt Hủy Đề Tài</a>
-                                            </td>
-                                        </tr>
-                                           <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="duyetdangkydetai"> <span class="glyphicon glyphicon-tags"></span>  Duyệt Đăng Ký Đề Tài</a>
-                                            </td>
-                                        </tr>
-                                          <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="capmadetai"> <span class="glyphicon glyphicon-barcode"></span>  Cấp Mã Đề Tài</a>
-                                            </td>
-                                        </tr>
-                							<tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="postthongbao"> <span class="glyphicon glyphicon-upload"></span>  Post Thông Báo</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="timkiem"> <span class="glyphicon glyphicon-search"></span>  Tìm Kiếm</a>
-                                            </td>
-                                        </tr>
-                                         <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="thaydoitrangthaidetai"> <span class="glyphicon glyphicon-pencil"></span>  Thay Đổi Trạng Thái Đề Tài</a>
-                                            </td>
-                                        </tr>
-                                          <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="phanconghoidongnghiemthu"> <span class="glyphicon glyphicon-edit"></span>  Phân Công Hội Đồng Nghiệm Thu</a>
-                                            </td>
-                                        </tr>
-                                         <tr>
-                                            
-                                            <td class="contentnews1" align="left">        
-                                             <a class="menu" id="phanconghoidongphanbien"> <span class="glyphicon glyphicon-check"></span>  Phân Công Hội Đồng Phản Biện</a>
-                                            </td>
-                                        </tr>
-                                    </table>   
-
 </div>
 
-<div id="Center_Div">
+<div class="col-xs-12 col-md-9">
+<div id="load">
 
-		
 </div>
-
+</div>
+</div>
+</div>
 <footer class="site-footer">
 
 <div class="container">
@@ -437,5 +373,7 @@ if(user==null)
 	</div>
 </div>
 </footer>
+
+                                           
 </body>
 </html>

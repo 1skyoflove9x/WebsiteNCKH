@@ -25,7 +25,6 @@
         </style>
 </head>
 <body>
-<div id="Center_Div">
 
 <div class="panel-group" align="center">
     <div class="panel panel-info">
@@ -55,8 +54,6 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
     
-
-<div id="Center_Div"> 
            <h2 id="ThongTinCaNhan" style="clear:right; margin-left:20px;color:#009;"> Nhúng thông báo </h2>
 
 <form id="registration-form" class="form-horizontal">
@@ -85,7 +82,7 @@
    
    
  </br>
- <form style=" border: groove;width:700px; margin-left:15px; margin-right:15px;">	
+ <form style=" border: groove;width:100%; margin-left:1%; margin-right:1%;">	
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
