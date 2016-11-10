@@ -304,11 +304,12 @@ if(user==null)
      <li>  <a class="menu" id="detaiduocphancongphanbien"> <span class="glyphicon glyphicon-bullhorn"></span>  Đề Tài Được Phân Công Phản Biện</a></li>
      <li>   <a class="menu" id="duyethuydetai"> <span class="glyphicon glyphicon-remove"></span> Duyệt Hủy Đề Tài</a></li>
      <li><a class="menu" id="duyetdangkydetai"> <span class="glyphicon glyphicon-tags"></span>  Duyệt Đăng Ký Đề Tài</a></li>
-      <li> <a class="menu" id="nhapđiemanhgia"> <span class="glyphicon glyphicon-upload"></span>  Nhập Điểm Đánh Giá</a></li>
+      <li> <a class="menu" id="nhapdiemdanhgia"> <span class="glyphicon glyphicon-upload"></span>  Nhập Điểm Đánh Giá</a></li>
      <li> <a class="menu" id="capmadetai"> <span class="glyphicon glyphicon-barcode"></span>  Cấp Mã Đề Tài</a></li>
      <li> <a class="menu" id="postthongbao"> <span class="glyphicon glyphicon-upload"></span>  Post Thông Báo</a></li>
-     <li>  <a class="menu" id="phanconghoidongnghiemthu"> <span class="glyphicon glyphicon-edit"></span>  Phân Công Hội Đồng Nghiệm Thu</a></li>
-     <li><a class="menu" id="phanconghoidongphanbien"> <span class="glyphicon glyphicon-check"></span>  Phân Công Hội Đồng Phản Biện</a></li>
+             <li><a class="menu" id="thaydoitrangthaidetai"> <span class="glyphicon glyphicon-pencil"></span>  Thay Đổi Trạng Thái Đề Tài</a></li>
+		<li><a class="menu" id="phanconghoidongnghiemthu"> <span class="glyphicon glyphicon-edit"></span>  Phân Công Hội Đồng Nghiệm Thu</a> </li>  
+        <li><a class="menu" id="phanconghoidongphanbien"> <span class="glyphicon glyphicon-check"></span>  Phân Công Hội Đồng Phản Biện</a></li>
      <li> <a class="menu" href="home"> <span class="glyphicon glyphicon-eject"></span>  Đăng Xuất</a></li>
      <li>  <a class="menu" id="timkiem"> <span class="glyphicon glyphicon-search"></span>  Tìm Kiếm</a></li>
       </ul>
@@ -324,9 +325,6 @@ if(user==null)
         <li><a 	id="giahandetai"> <span class="glyphicon glyphicon-asterisk"></span> Gia Hạn Đề Tài</a></li>
         <li><a  id="huydetai"> <span class="glyphicon glyphicon-flag"></span> Hủy Đề Tài</a></li>
         <li><a  id="nopbaocao"> <span class="glyphicon glyphicon-floppy-open"></span> Nộp Báo Cáo</a></li>
-         <li><a class="menu" id="thaydoitrangthaidetai"> <span class="glyphicon glyphicon-pencil"></span>  Thay Đổi Trạng Thái Đề Tài</a></li>
-		<li><a class="menu" id="phanconghoidongnghiemthu"> <span class="glyphicon glyphicon-edit"></span>  Phân Công Hội Đồng Nghiệm Thu</a> </li>  
-        <li><a class="menu" id="phanconghoidongphanbien"> <span class="glyphicon glyphicon-check"></span>  Phân Công Hội Đồng Phản Biện</a></li>
         </ul>
       </li>
       </div>

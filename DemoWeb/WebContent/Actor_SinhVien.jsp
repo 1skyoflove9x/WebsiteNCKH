@@ -1,6 +1,10 @@
 <%@ page import="connectdatabase.User" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -123,8 +127,7 @@
 		$("#dangxuat").click(function(e) {
 			//=======.load(url)================
 			var url,data;
-			
-			url = "home";
+			url = "Login.jsp";
 			//url = "files/file-001.php";
 			$("#load").load(url);
 			
@@ -158,17 +161,17 @@
         </style>
 </head>
 <body>
+<%-- <c:if test="${empty sessionScope['loginUser']}"> --%>
+<%--     <c:redirect url="Login.jsp" /> --%>
+<%-- </c:if> --%>
 <%
-User user =(User) session.getAttribute("user");
-if(user==null)
-{
-	response.sendRedirect("home");	
-	return;
-}
+    if ((session.getAttribute("uName") == null) || (session.getAttribute("uName") == "")) {
+    	response.sendRedirect("Login.jsp");
+%>
+<%} else {
 %>
 
 <div class="col-xs-12 col-sm-12 ">
-
 	<div class="page-header no-margin no-padding">
 	<div class="container" >
 	 <a  href="http://hcmute.edu.vn/">
@@ -177,7 +180,7 @@ if(user==null)
 	</div>
 	</div>
 	</div>
-
+			 
 <div id="Main">
 <div class="container">
 <div class="col-xs-12 col-md-3 ">	
@@ -201,7 +204,7 @@ if(user==null)
      <li><a class="menu" id="giahandetai"> <span class="glyphicon glyphicon-asterisk"></span>  Gia Hạn Đề Tài</a></li>
      <li><a class="menu" id="huydetai"> <span class="glyphicon glyphicon-flag"></span>  Hủy Đề Tài</a></li>
      <li> <a class="menu" id="nopbaocao"> <span class="glyphicon glyphicon-floppy-open"></span>  Nộp Báo Cáo</a></li>
-     <li> <a class="menu" href="home"> <span class="glyphicon glyphicon-eject"></span>  Đăng Xuất</a></li>
+     <li> <a class="menu" href="logout.jsp"> <span class="glyphicon glyphicon-eject"></span>  Đăng Xuất</a></li>
       </ul>
       
       
@@ -247,6 +250,8 @@ if(user==null)
 	</div>
 </div>
 </footer>
- 
+<%
+    }
+%>
 </body>
 </html>

@@ -45,12 +45,12 @@ $('.carousel').carousel()
   <div class="form-control-group" style="margin-left:1%;">
     <label class="col-xs-12 col-md-12  ">Tên Đề Tài <span class="rq"> * </span></label>
      <div class="col-xs-12 col-md-12 ">
-    <textarea type="text" class="form-control" rows="2" name="name" id="tendetai" minlength="20" placeholder="nhập tên đề tài"  required></textarea>
+    <textarea type="text" class="form-control" rows="2" name="tendetai" value="${row.TenDeTai}" id="tendetai" minlength="20" placeholder="nhập tên đề tài"  required></textarea>
     <p class="help-block">Nhập theo tên đã đăng ký</p>
   </div>
      <label class="col-xs-12 col-md-3  " >Mã Đề Tài<span class="rq"> *</label>
     <div class="col-xs-12 col-md-6">
-     <input type="text"  class="form-control" name="name" id="madetai" placeholder="Nhập nhập mã đề tài"  minlength="6">
+     <input type="text"  class="form-control" name="madetai" value="${row.MaDeTai}" id="madetai" placeholder="Nhập nhập mã đề tài"  minlength="6">
     </div>
     <div class="col-xs-12 col-md-3">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Kiểm Tra Mã Đề Tài</button>
@@ -62,77 +62,77 @@ $('.carousel').carousel()
 
     <label  class="col-xs-12 col-md-3  ">Chủ Nhiệm</label>
     <div class="col-xs-12 col-md-9  "">
-      <input type="text" class="form-control"name="name" id="chunhiem" placeholder="nhập tên chủ nhiệm" minlength="8" required>
+      <input type="text" class="form-control"name="chunhiem" value="${row.ChuNhiem}" id="chunhiem" placeholder="nhập tên chủ nhiệm" minlength="8" required>
     </br>
     </div>
 <label class="col-xs-12 col-md-3  ">Ngày Sinh</label>
     <div class="col-xs-12 col-md-9  ">
-      <input type="date" class="form-control"name="date" id="ngaysinh">
+      <input type="date" class="form-control"name="ngaysinh" value="${row.NgaySinh}" id="ngaysinh">
       </br>
     </div>
 
     <label class="col-xs-12 col-md-3  ">Đơn Vị</label>
     <div  class="col-xs-12 col-md-9  ">
-      <input type="text" class="form-control" name="name" id="donvi" minlength="6" placeholder="Nhập khoa, ban, phòng công tác">
+      <input type="text" class="form-control" name="donvi" value="${row.DonVi}" id="donvi" minlength="6" placeholder="Nhập khoa, ban, phòng công tác">
    </br>
     </div>
 <label  class="col-xs-12 col-md-3  ">SĐT</label>
     <div  class="col-xs-12 col-md-9  ">
-      <input type="number" class="form-control" name="number" id="sdt" minlength="10" placeholder="Nhập số điện thoại" required>
+      <input type="number" class="form-control" name="SDT" value="${row.SDT}" id="sdt" minlength="10" placeholder="Nhập số điện thoại" required>
     </br>
     </div>
 
 
     <label  class="col-xs-12 col-md-3  ">Ngày Bắt Đầu</label>
     <div class="col-xs-12 col-md-9  ">
-      <input type="date" class="form-control" name="date" id="ngaybatdau">
+      <input type="date" class="form-control" name="ngaybatdau" id="ngaybatdau">
       </br>
     </div>
 <label  class="col-xs-12 col-md-3  ">Ngày Kết Thúc</label>
     <div  class="col-xs-12 col-md-9  ">
-      <input type="date" class="form-control" name="date" id="ngayketthuc">
+      <input type="date" class="form-control" name="ngayketthuc" id="ngayketthuc">
       </br>
     </div>
     <label  class="col-xs-12 col-md-3  ">Lớp</label>
     <div  class="col-xs-12 col-md-9  ">
-      <input type="text" class="form-control" name="name" minlength="6" id="lop" placeholder="nhập lớp sinh viên theo học">
+      <input type="text" class="form-control" name="lop" value="${row.Lop}" minlength="6" id="lop" placeholder="nhập lớp sinh viên theo học">
 </br>
     </div>
 <label  class="col-xs-12 col-md-3  ">Niên Khóa</label>
     <div  class="col-xs-12 col-md-9 ">
-      <input type="number" class="form-control" name="number" id="nien khoa"  minlength="6" placeholder="Nhập niên khóa học của sinh viên">
+      <input type="number" class="form-control" name="nienkhoa" value="${row.NienKhoa}" id="nien khoa"  minlength="6" placeholder="Nhập niên khóa học của sinh viên">
     </br>
     </div>
 
     <label class="col-xs-12 col-md-3  ">Giáo Viên Hướng Dẫn</label>
     <div  class="col-xs-12 col-md-9  ">
-      <input type="text" class="form-control" name="name" id="giaovien" minlength="6" placeholder="Nhập tên GV + học hàm hoặc học vị">
+      <input type="text" class="form-control" name="gvhd" value="${row.GVHD}" id="giaovien" minlength="6" placeholder="Nhập tên GV + học hàm hoặc học vị">
 <br>
     </div>
 
  <label  class="col-xs-12 col-md-3  ">Kinh Phí Dự Án</label>
     <div  class="col-xs-12 col-md-9  ">
-      <input type="number" class="form-control" name="number"  id="kinhphi" placeholder="Nhập kính phí theo hợp đồng" required>
+      <input type="number" class="form-control" name="kinhphi" value="${row.KinhPhi}"  id="kinhphi" placeholder="Nhập kính phí theo hợp đồng" required>
     </br>
     </div>
     <label  class="col-xs-12 col-md-3  ">Kinh Phí Tạm ứng </label>
     <div  class="col-xs-12 col-md-9  ">
-      <input type="number" class="form-control" name="number" id="kinhphiung" placeholder="Nhập tạm ứng" required>
+      <input type="number" class="form-control" name="kinhphitamung" value="${row.KinhPhiTamUng}" id="kinhphiung" placeholder="Nhập tạm ứng" required>
       </br>
     </div>
 <label  class="col-xs-12 col-md-3  ">Vào Ngày</label>
     <div  class="col-xs-12 col-md-9 ">
-      <input type="date" class="form-control" name="date" id="vaonhay" >
+      <input type="date" class="form-control" name="ngaytamung" value="${row.NgayTamUng}" id="vaonhay" >
       </br>
     </div>
     <label  class="col-xs-12 col-md-3  ">Xin Gia Hạn Đến Ngày </label>
     <div  class="col-xs-12 col-md-9  ">
-      <input type="date" class="form-control" name="date" id="tamung" >
+      <input type="date" class="form-control" name="ngaygiahan" id="tamung" >
       </br>
     </div>
     <label  class="col-xs-12 col-md-3  ">Lý Do</label>
     <div  class="col-xs-12 col-md-3  "></div>
-    <textarea class="form-control" name="name" id="lydo" rows="5"placeholder="Nhập lý do gia hạn đề tài"></textarea>
+    <textarea class="form-control" name="lydo" id="lydo" rows="5"placeholder="Nhập lý do gia hạn đề tài"></textarea>
     </br>
   </div>
 

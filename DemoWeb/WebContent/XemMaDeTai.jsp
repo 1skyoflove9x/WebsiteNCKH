@@ -39,45 +39,45 @@ $('.carousel').carousel()
       <div class="panel-heading" id="tieude" style="color: blue"><strong>Xem Mã Số Đề Tài</strong></div>
     </div>
     </div>
-       <input type="text" name="button" class="btn btn-primary" value="Chưa Có Mã Số">
+       <input type="text" name="button" class="btn btn-primary" value="${row.MaDeTai}">
     <form style=" border: groove; margin-left:15px; margin-right:15px;">	
 </br>
 <div class="col-xs-12 col-md-2 ">
 <strong> Họ Và Tên:</strong>
     </div>
 <div class="col-xs-12 col-md-4 ">
-Nguyễn Quốc Trường
+value="${row.HoTen}"
     </div>
 <div class="col-xs-12 col-md-2">
 <strong>Mã Số</strong>
     </div>
 <div class="col-xs-12 col-md-4  ">
-14110425
+value="${row.MSSV}"
     </div></br></br>
 
 <div class="col-xs-12 col-md-2  ">
 <strong> Khoa:</strong>
     </div>
 <div class="col-xs-12 col-md-4 ">
-Đào tạo chất lượng cao
+value="${row.Khoa}"
     </div>
 <div class="col-sm-2">
 <strong>Lớp</strong>
     </div>
 <div class="col-xs-12 col-md-2 ">
-14110CL1
+value="${row.Lop}"
     </div></br></br>
 <div class="col-xs-12 col-md-2  ">
 <strong> Tên Đề Tài:</strong>
     </div>
 <div class="col-xs-12 col-md-10  ">
-<p>Ứng dụng định vị GPS và sim 900A để hỗ trợ người tham gia giao thông ở Tp. Hồ Chí Minh</p>
+value="${row.TenDeTai}"
     </div></br></br>
 <div class="col-xs-12 col-md-2">
 <strong>Lý Do:</strong>
 </div>
  <div class="col-xs-12 col-md-10 ">
-<p>Đề tai đang chờ phê duyệt</p>
+value="${row.LyDo}"
 </div></br></br>
 </form>
     

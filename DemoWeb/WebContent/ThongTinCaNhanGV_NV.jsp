@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+        <%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -46,11 +50,11 @@ $('.carousel').carousel()
 <div class="form-group">
     <label for="inputText" class="col-sm-2 control-label">Họ Và Tên</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText" placeholder="Nhập họ và tên...">
+    <c:out value="${row.HoTen}"/>
     </div>
 <label for="inputText" class="col-sm-2 control-label">Mã Số</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText" placeholder="Nhập mã số nhân viên..">
+<c:out value="${row.MSGV}"/>
     </div>
 </br></br>
   </div>
@@ -58,11 +62,11 @@ $('.carousel').carousel()
 <div class="form-group">
     <label for="inputEmail" class="col-sm-2 control-label">Email</label>
     <div class="col-sm-4">
-      <input type="email" class="form-control" id="inputText" placeholder="Nhập địa chỉ gmail...">
+    <c:out value="${row.Email}"/>
     </div>
 <label for="inputText" class="col-sm-2 control-label">SĐT</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText" placeholder="Nhập địa chỉ gmail...">
+     <c:out value="${row.SDT}"/>
     </div>
 </br></br>
   </div>
@@ -71,11 +75,11 @@ $('.carousel').carousel()
 <div class="form-group">
     <label for="inputText" class="col-sm-2 control-label">Chức Vụ</label>
     <div class="col-sm-4">
-      <input type="email" class="form-control" id="inputText" placeholder="Nhập chức vụ..">
+     <c:out value="${row.ChucVu}"/>
     </div>
 <label for="inputText" class="col-sm-2 control-label">Đơn Vị Công Tác</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText"placeholder="Nhập đơn vịcông tác..">
+    <c:out value="${row.DonVi}"/>
     </div>
 </br></br>
   </div>
@@ -83,15 +87,11 @@ $('.carousel').carousel()
 <div class="form-group">
     <label for="inputText" class="col-sm-2 control-label">Ngày Sinh</label>
     <div class="col-sm-4">
-      <input type="date" class="form-control" id="inputText">
+      <c:out value="${row.NgaySinh}"/>
     </div>
 <label for="inputText" class="col-sm-2 control-label">Giới Tính</label>
     <div class="col-sm-4">
-      <label class="checkbox-inline">
-  <input type="checkbox" id="inlineCheckbox1" value="option1"> Nam
-</label>
-<label class="checkbox-inline">
-  <input type="checkbox" id="inlineCheckbox2" value="option2"> Nữ
+    <c:out value="${row.GioiTinh}"/>
     </div>
 </br></br>
   </div>
@@ -99,11 +99,11 @@ $('.carousel').carousel()
 <div class="form-group">
     <label for="inputText" class="col-sm-2 control-label">CMND</label>
     <div class="col-sm-4">
-      <input type="email" class="form-control" id="inputText" placeholder="Nhập số CMND.">
+  <c:out value="${row.CMND}"/>
     </div>
 <label for="inputText" class="col-sm-2 control-label">Địa Chỉ</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText"placeholder="Nhập địa chỉ thường trú.">
+<c:out value="${row.DiaChi}"/>
     </div>
 </br></br>
   </div>
@@ -111,11 +111,11 @@ $('.carousel').carousel()
 <div class="form-group">
     <label for="inputText" class="col-sm-2 control-label">TK Ngân hàng</label>
     <div class="col-sm-4">
-      <input type="email" class="form-control" id="inputText" placeholder="Nhập TK ngân hàng..">
+     <c:out value="${row.TKNganHang}"/>
     </div>
 <label for="inputText" class="col-sm-2 control-label">Chi Nhánh</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText"placeholder="Nhập chi nhánh ngân hàng..">
+<c:out value="${row.ChiNhanh}"/>
     </div>
 </br></br>
   </div>
@@ -137,11 +137,11 @@ $('.carousel').carousel()
 <div class="form-group" style="margin-left:10px;margin-right:10px">
     <label for="inputText" class="col-sm-2 control-label">Họ Và Tên <span class="rq"> * </span></label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" name="name" id="name"  placeholder="Nhập họ và tên..." minlength="6">
+      <input type="text" class="form-control" name="hoten" id="name" value="${row.HoTen}"  placeholder="Nhập họ và tên..." minlength="6">
     </div>
 <label for="inputText" class="col-sm-2 control-label">Mã Số <span class="rq"> * </span></label>
     <div class="col-sm-4">
-      <input type="number" class="form-control" name="number" id="maso" placeholder="Nhập mã số sinh viên.."  minlength="8">
+      <input type="number" class="form-control" name="msgv" id="maso" value="${row.MSGV}" placeholder="Nhập mã số sinh viên.."  minlength="8">
     </div>
 </br></br>
   </div>
@@ -149,11 +149,11 @@ $('.carousel').carousel()
 <div class="form-group" style="margin-left:10px;margin-right:10px">
     <label for="inputEmail" class="col-sm-2 control-label">Email<span class="rq"> * </span> <span class="rq"> * </span></label>
     <div class="col-sm-4">
-      <input type="email" class="form-control" name="gmail" id="email" placeholder="Nhập địa chỉ gmail...">
+      <input type="email" class="form-control" name="email" id="email" value="${row.Email}" placeholder="Nhập địa chỉ gmail...">
     </div>
 <label for="inputText" class="col-sm-2 control-label">SĐT<span class="rq"> * </span></label>
     <div class="col-sm-4">
-      <input type="number" class="form-control" name="number" id="sdt" placeholder="Nhập số điện thoại..."  minlength="9">
+      <input type="number" class="form-control" name="sdt" id="sdt" value="${row.SDT}" placeholder="Nhập số điện thoại..."  minlength="9">
     </div>
 </br></br>
   </div>
@@ -161,11 +161,11 @@ $('.carousel').carousel()
 <div class="form-group" style="margin-left:10px;margin-right:10px">
     <label for="inputText" class="col-sm-2 control-label">Chức vụ <span class="rq"> * </span></label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" name="name" id="chucvu" placeholder="Nhập chức vụ..">
+      <input type="text" class="form-control" name="chucvu" value="${row.ChucVu}" id="chucvu" placeholder="Nhập chức vụ..">
     </div>
 <label for="inputText" class="col-sm-2 control-label">Đơn vị Công Tác<span class="rq"> * </span></label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" name="name" id="donvi" placeholder="Nhập đơn vị.">
+      <input type="text" class="form-control" name="dv" value="${row.DonVi}" id="donvi" placeholder="Nhập đơn vị.">
     </div>
 </br></br>
   </div>
@@ -174,7 +174,7 @@ $('.carousel').carousel()
 <div class="form-group" style="margin-left:10px;margin-right:10px">
     <label for="inputText" class="col-sm-2 control-label">Ngày Sinh<span class="rq"> * </span></label>
     <div class="col-sm-4">
-      <input type="date" class="form-control" name="date" id="ngaysinh">
+      <input type="date" class="form-control" name="ngaysinh" value="${row.NgaySinh}" id="ngaysinh">
     </div>
 <label for="inputText" class="col-sm-2 control-label">Giới Tính<span class="rq"> * </span></label>
     <div class="col-sm-4">
@@ -190,11 +190,11 @@ $('.carousel').carousel()
 <div class="form-group" style="margin-left:10px;margin-right:10px">
     <label for="inputText" class="col-sm-2 control-label">CMND<span class="rq"> * </span></label>
     <div class="col-sm-4">
-      <input type="number" class="form-control" name="number" id="cmnd" placeholder="Nhập số CMND."  minlength="9">
+      <input type="number" class="form-control" name="cmnd" value="${row.CMND}" id="cmnd" placeholder="Nhập số CMND."  minlength="9">
     </div>
 <label for="inputText" class="col-sm-2 control-label">Địa Chỉ<span class="rq"> * </span></label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" name="name" id="diachi" placeholder="Nhập địa chỉ thường trú."  minlength="9">
+      <input type="text" class="form-control" name="diachi" value="${row.DiaChi}" id="diachi" placeholder="Nhập địa chỉ thường trú."  minlength="9">
     </div>
 </br></br>
   </div>
@@ -202,11 +202,11 @@ $('.carousel').carousel()
 <div class="form-group" style="margin-left:10px;margin-right:10px">
     <label for="inputText" class="col-sm-2 control-label">TK Ngân hàng<span class="rq"> * </span></label>
     <div class="col-sm-4">
-      <input type="number" class="form-control" name="number " id="tk" placeholder="Nhập TK ngân hàng.."  minlength="9">
+      <input type="number" class="form-control" name="tknganhang " value="${row.TKNganHang}" id="tk" placeholder="Nhập TK ngân hàng.."  minlength="9">
     </div>
 <label for="inputText" class="col-sm-2 control-label">Chi Nhánh<span class="rq"> * </span></label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" name="name" id="chinhanh" placeholder="Nhập chi nhánh ngân hàng..">
+      <input type="text" class="form-control" name="chinhanh" value="${row.ChiNhanh}" id="chinhanh" placeholder="Nhập chi nhánh ngân hàng..">
     </div>
 </br></br>
   </div>
@@ -222,8 +222,9 @@ $('.carousel').carousel()
 </label>
 </br></br>
 <div style="margin-left:500px;margin-right:10px" class="form-group">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Trở Về</button>
-        <button  type="submit"  class="btn btn-primary" name="signup" value="Đăng ký" onclick="javascript:void(alert('Thành Công!!!'))">Cập nhật</button>
+		 <input type="reset" value="reset"/>
+       <input type="submit" class="btn btn-primary" value="Save" />
+       
       </div>
 </form>
 

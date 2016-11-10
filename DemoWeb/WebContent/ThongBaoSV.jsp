@@ -58,7 +58,7 @@ $('.carousel').carousel()
     <div id="Center_Div" class="Center_Div"> 
           <div class="panel-group" align="center">
     <div class="panel panel-info">
-      <div class="panel-heading" id="tieude" style="color: blue"><strong>Thông Tin Sinh Viên</strong></div>
+      <div class="panel-heading" id="tieude" style="color: blue"><strong>Trang Chủ</strong></div>
     </div>
     </div>
     
