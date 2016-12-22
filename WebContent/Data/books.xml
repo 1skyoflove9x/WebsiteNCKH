@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+   <book id="bk101">
+      <tendetai>Ứng dụng công nghệ GPS</tendetai>
+      <chunhiem>Nguyễn Quốc Trường</chunhiem>
+      <gvhd>Ths.Nguyễn Văn A</gvhd>
+   </book>
+  <book id="bk102">
+      <tendetai>Công nghệ sinh học</tendetai>
+      <chunhiem>Pham Công Hậu</chunhiem>
+      <gvhd>Ths.Nguyễn Văn B</gvhd>
+   </book>
+  <book id="bk103">
+      <tendetai>Thiết bị thông minh</tendetai>
+      <chunhiem>Lý Say Xình</chunhiem>
+      <gvhd>Ths.Nguyễn Văn C</gvhd>
+   </book>
+   
+  <book id="bk104">
+      <tendetai>Ngôi nhà thông minh</tendetai>
+      <chunhiem>Trần Trọng Trí</chunhiem>
+      <gvhd>Ths.Nguyễn Văn C</gvhd>
+   </book>
+</catalog>

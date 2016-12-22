@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+ <cd>
+		<stt>1</stt>
+      <user>14110435</user>
+      <pass>12345</pass>
+      <ten>Lý Say Xình</ten>
+      <quyen>Giảng viên</quyen>
+</cd>
+<cd>
+     	<stt>2</stt>
+      <user>14110435</user>
+      <pass>12345</pass>
+      <ten>Lý Say Xình</ten>
+      <quyen>Giảng viên</quyen>
+   </cd>
+   <cd>
+     	<stt>3</stt>
+      <user>14110635</user>
+      <pass>12345</pass>
+      <ten>Phạm Công Hậu</ten>
+      <quyen>Nhân Viên</quyen>
+   </cd>
+</catalog>
