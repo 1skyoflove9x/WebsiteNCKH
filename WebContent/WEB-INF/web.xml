@@ -9,14 +9,30 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
-  
- <servlet>
- <servlet-name>Hello</servlet-name>
- <servlet-class>connectdatabase.LoginForm</servlet-class>
- </servlet>
- <servlet-mapping>
-  <servlet-name>Hello</servlet-name>
-  <url-pattern>/login</url-pattern>
- </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginForm</servlet-name>
+    <servlet-class>connectdatabase.LoginForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginForm</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DangNhap</servlet-name>
+    <jsp-file>/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DangNhap</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FileUploadExcel</display-name>
+    <servlet-name>FileUploadExcel</servlet-name>
+    <servlet-class>controller.FileUploadExcel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileUploadExcel</servlet-name>
+    <url-pattern>/FileUploadExcel</url-pattern>
+  </servlet-mapping>
 </web-app>

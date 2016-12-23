@@ -1278,8 +1278,8 @@
         dateFormat: 'yyyy-mm-dd',
         addValidClassOnAll: false, // whether or not to apply class="valid" even if the input wasn't validated
         decimalSeparator: '.',
-        inputParentClassOnError: 'has-error', // twitter-bootstrap default class name
-        inputParentClassOnSuccess: 'has-success', // twitter-bootstrap default class name
+        inputParentClassOnError: 'has-error has-feedback', // twitter-bootstrap default class name
+        inputParentClassOnSuccess: 'has-success has-feedback', // twitter-bootstrap default class name
         validateHiddenInputs: false, // whether or not hidden inputs should be validated
         inlineErrorMessageCallback: false,
         submitErrorMessageCallback: false
